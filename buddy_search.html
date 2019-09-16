@@ -1,0 +1,255 @@
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buddy Search App</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="static/buddy_search.css" type="text/css">
+	</head>
+	<body>
+	
+<div id="firstScreen" style='display:block'>
+<br>
+<label class="container">Upload files
+  <input type="radio" name="gender" value="Up" checked onclick="show2();">
+  <span class="checkmark"></span>
+</label>
+<label class="container"> Sample files
+  <input type="radio" name="gender" value="Sam" onclick="show1();">
+  <span class="checkmark"></span>
+</label>
+ <input id="submit" class="button" type="submit" value='Start' onclick="chooseImageComplete()">
+
+
+		<div id='image-sample-screen' style='display:none'>
+		<div>
+		<select  class="select-css" id="selectSample" onchange="myFunction()" style="width:200px;">
+ <option value="sample_1">Sample1</option>
+  <option value="sample_2">Sample2</option>
+  <option value="sample_3">Sample3</option>
+  <option value="sample_4">Sample4</option>
+</select></div>
+			<div id='sample1' style='display:block'>
+				<table><tr><td><div id="myImga" height="20%"></div></td><td><div id="myImgb"></div> </td></tr></table>
+			</div>
+			<div id='sample2' style='display:none'>
+				<table><tr><td><div id="myImga2" height="20%"></div></td><td><div id="myImgb2"></div> </td></tr></table>
+			</div>
+			<div id='sample3' style='display:none'>
+				<table><tr><td><div id="myImga3" height="20%"></div></td><td><div id="myImgb3"></div> </td></tr></table>
+			</div>
+			
+			<div id='sample4' style='display:none'>
+				<table><tr><td><div id="myImga4" height="20%"></div></td><td><div id="myImgb4"></div> </td></tr></table>
+			</div>
+			
+		</div>
+        <div id='image-uploud-screen' style='display:block'>
+                <div class=row>
+                    <div class='col-6'>
+                        <div class='bs-thumbnail bs-container content'>
+                            <img id='img1' name='img1'/>
+                        </div>
+                        <input id="file1" type="file" accept="image/*" onchange="readURL(this,'img1')">
+                    </div>
+                    <div class='col-6'>
+                        <div class='bs-thumbnail bs-container'>
+                            <img id='img2' name='img2'/>
+                        </div>
+                        <input id="file2" type="file" accept="image/*" onchange="readURL(this,'img2')">
+                    </div>
+                   
+                </div>
+			
+        </div>
+		
+		</div>
+
+        <div id='points-selection-screen' style='display:none;'>
+            <nav id='#navbar' class='navbar navbar-default'>
+                <button class=btn-navbar id="back-btn">Back</button>
+                <button class=btn-navbar id="next-btn">Next</button>
+                <span id="instruction">Please select the epipole in image #1</span>
+            </nav>
+            
+            <section>
+                <div id='layer1' class=bs-layer>
+                    <div id="container1" class=bs-canvas-container>
+                         <canvas id="canvas1" class=bs-canvas width=2208 height=1242></canvas>
+                    </div>
+                </div>
+                <div id='layer2' class=bs-layer>
+                    <div id="container2" class=bs-canvas-container>
+                         <canvas id="canvas2" class=bs-canvas width=2208 height=1242></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+		
+	</body>
+	
+    <script >
+	//https://drive.google.com/file/d/14oiogMv2AeauOvKCZmDkkeloZVEm68KO/edit
+	//https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555387742/shape/mentalfloss/640field.jpg
+	//next step. use hard codded images and make it work. Select bar. radio file/examples
+	//https://upload.wikimedia.org/wikipedia/commons/7/77/Delete_key1.jpg
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/1_a.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImga").appendChild(myImage)
+});
+
+
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/1_b.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImgb").appendChild(myImage)
+});
+
+	//https://drive.google.com/file/d/14oiogMv2AeauOvKCZmDkkeloZVEm68KO/edit
+	//https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555387742/shape/mentalfloss/640field.jpg
+	//next step. use hard codded images and make it work. Select bar. radio file/examples
+	//https://upload.wikimedia.org/wikipedia/commons/7/77/Delete_key1.jpg
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/2_a.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImga2").appendChild(myImage)
+});
+
+
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/2_b.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImgb2").appendChild(myImage)
+});
+	
+	
+	//https://drive.google.com/file/d/14oiogMv2AeauOvKCZmDkkeloZVEm68KO/edit
+	//https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555387742/shape/mentalfloss/640field.jpg
+	//next step. use hard codded images and make it work. Select bar. radio file/examples
+	//https://upload.wikimedia.org/wikipedia/commons/7/77/Delete_key1.jpg
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/3_a.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImga3").appendChild(myImage)
+});
+
+
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/3_b.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImgb3").appendChild(myImage)
+});
+
+
+//https://drive.google.com/file/d/14oiogMv2AeauOvKCZmDkkeloZVEm68KO/edit
+	//https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555387742/shape/mentalfloss/640field.jpg
+	//next step. use hard codded images and make it work. Select bar. radio file/examples
+	//https://upload.wikimedia.org/wikipedia/commons/7/77/Delete_key1.jpg
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/4a.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImga4").appendChild(myImage)
+});
+
+
+	fetch('https://raw.githubusercontent.com/ykasten/BuddySearch/master/4b.png').then(res => res.blob()) // Gets the response and returns it as a blob
+  .then(blob => {
+    // Here's where you get access to the blob
+    // And you can use it for whatever you want
+    // Like calling ref().put(blob)
+
+    // Here, I use it to make an image appear on the page
+    let objectURL = URL.createObjectURL(blob);
+    let myImage = new Image();
+    myImage.src = objectURL;
+    document.getElementById("myImgb4").appendChild(myImage)
+	});
+	</script>
+<script>
+var using_sample=false;
+function show1(){
+using_sample=true;
+  document.getElementById('image-uploud-screen').style.display ='none';
+  document.getElementById('image-sample-screen').style.display = 'block';
+}
+function show2(){
+using_sample=false;
+ document.getElementById('image-uploud-screen').style.display ='block';
+  document.getElementById('image-sample-screen').style.display = 'none';
+}
+function myFunction(){
+	var sel = document.getElementById('selectSample');
+	 document.getElementById('sample1').style.display ='none';
+	document.getElementById('sample2').style.display = 'none';
+		document.getElementById('sample3').style.display = 'none';
+			document.getElementById('sample4').style.display = 'none';
+	if(sel.value=="sample_1"){
+	document.getElementById('sample1').style.display ='block';
+	}else if(sel.value=="sample_2"){
+		document.getElementById('sample2').style.display ='block';
+	}
+	else if(sel.value=="sample_3"){
+		document.getElementById('sample3').style.display ='block';
+	}
+	else if(sel.value=="sample_4"){
+		document.getElementById('sample4').style.display ='block';
+	}
+}
+</script>   
+   <script src="static/buddy_search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+	 <script src="http://mlweb.loria.fr/lalolib.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+</html> 
