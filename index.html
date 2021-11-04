@@ -105,12 +105,9 @@ animation-direction: alternate;
             <div class="col-md-16">
                 <h2>Yoni Kasten</h2>
 <p>
-I am currently a PhD student at Weizmann Institute of Science
+I am a Research Scientist at NVIDIA Research. I'm interested in Computer Vision and Machine Learning. My research is mostly in the domain of 3D computer vision (e.g. Camera Localization, Structure From Motion and 3D reconstruction) and has recently focused on deep neural models for computer vision problems that involve geometry. I recently completed my PhD at Weizmann Institute of Science
 under the supervision of <a href="http://www.weizmann.ac.il/math/ronen/home/" target="_blank">Prof. Ronen Basri</a> from the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science.
 I did my B.Sc. in Electrical Engineering at the Hebrew University of Jerusalem, where I also did my M.Sc. in Computer Science under the supervision of <a href="https://www.cs.huji.ac.il/~peleg/" target="_blank">Prof. Shmuel Peleg</a> and <a href="https://www.cse.huji.ac.il/~werman/" target="_blank">Prof. Michael Werman. </a>
-<br><b>Research interests:</b>
-<br>I'm interested in Computer Vision and Machine Learning.
-My PhD research is mostly in the domain of 3D computer vision (e.g. Camera Localization, Structure From Motion and 3D reconstruction).</br>
 <font size=1></font></br>
 <b>Email:</b> yonikasten <font color="grey">at</font> gmail <font color="grey">dot</font> com</br>
 </p>
@@ -118,7 +115,8 @@ My PhD research is mostly in the domain of 3D computer vision (e.g. Camera Local
   <p>
                 <h4>Teaching</h4>
                 <ul>
-                <li>2020/spring (WIS):  Multiple View Geometry for Computer Vision Applications (lecturer) </li>
+                    <li>2021/spring (WIS):  Multiple View Geometry for Computer Vision Applications (lecturer) </li>
+                    <li>2020/spring (WIS):  Multiple View Geometry for Computer Vision Applications (lecturer) </li>
                 <li>2018/winter (WIS):  Introduction to Computer Vision (TA) </li>
 				<li>2016/winter (HUJI):  Image Processing (TA) </li>
 				<li>2015/winter (HUJI):  Image Processing (TA) </li>
@@ -140,6 +138,98 @@ My PhD research is mostly in the domain of 3D computer vision (e.g. Camera Local
             <h1>Publications</h1>
         </div>
 
+
+       <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="images/teaser_lucia.gif"  alt="">
+
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Layered Neural Atlases for Consistent Video Editing</h2>
+                 <p>
+                   Yoni Kasten, Dolev Ofri, Oliver Wang, Tali Dekel<br>
+                   <i> SIGGRAPH Asia 2021 </i>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="We present a method that decomposes, and “unwraps”, an input video into a set of layered 2D atlases, each providing a unified representation of the appearance of an object (or background) over the video. For each pixel in the video, our method estimates its corresponding 2D coordinate in each of the atlases, giving us a consistent parameterization of the video, along with an associated alpha (opacity) value. Importantly, we design our atlases to be interpretable and semantic, which facilitates easy and intuitive editing in the atlas domain, with minimal manual work required. Edits applied to a single 2D atlas (or input video frame) are automatically and consistently mapped back to the original video frames, while preserving occlusions, deformation, and other complex scene effects such as shadows and reflections. Our method employs a coordinate-based Multilayer Perceptron (MLP) representation for mappings, atlases, and alphas, which are jointly optimized on a per-video basis, using a combination of video reconstruction and regularization losses. By operating purely in 2D, our method does not require any prior 3D knowledge about scene geometry or camera poses, and can handle complex dynamic real world videos. We demonstrate various video editing applications, including texture mapping, video style transfer, image-to-video texture transfer, and segmentation/labeling propagation, all automatically produced by editing a single 2D atlas image. "> Abstract</a>
+                 <a href="https://arxiv.org/pdf/2109.11418.pdf" class="btn btn-default" target="_blank">Paper </a>
+                 <a href="https://layered-neural-atlases.github.io/" class="btn btn-default" target="_blank">Project page </a>
+                    <a href="https://github.com/ykasten/layered-neural-atlases" class="btn btn-default" target="_blank">Code </a>
+
+             </div>
+
+      </div><!-- end of row -->
+
+
+
+  <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="images/volsdf.gif"  alt="">
+
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Volume Rendering of Neural Implicit Surfaces</h2>
+                 <p>
+                   Lior Yariv, Jiatao Gu, Yoni Kasten, Yaron Lipman<br>
+                   <i> Neural Information Processing Systems 2021 (NeurIPS'21)  </i> <br>
+                   <p style="color:red;"> Oral presentation </p>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Neural volume rendering became increasingly popular recently due to its success in synthesizing novel views of a scene from a sparse set of input images. So far, the geometry learned by neural volume rendering techniques was modeled using a generic density function. Furthermore, the geometry itself was extracted using an arbitrary level set of the density function leading to a noisy, often low fidelity reconstruction. The goal of this paper is to improve geometry representation and reconstruction in neural volume rendering. We achieve that by modeling the volume density as a function of the geometry. This is in contrast to previous work modeling the geometry as a function of the volume density. In more detail, we define the volume density function as Laplace’s cumulative distribution function (CDF) applied to a signed distance function (SDF) representation. This simple density representation has three benefits: (i) it provides a useful inductive bias to the geometry learned in the neural volume rendering process; (ii) it facilitates a bound on the opacity approximation error, leading to an accurate sampling of the viewing ray. Accurate sampling is important to provide a precise coupling of geometry and radiance; and (iii) it allows efficient unsupervised disentanglement of shape and appearance in volume rendering. Applying this new density representation to challenging scene multiview datasets produced high quality geometry reconstructions, outperforming relevant baselines. Furthermore, switching shape and appearance between scenes is possible due to the disentanglement of the two."> Abstract</a>
+                 <a href="https://arxiv.org/pdf/2106.12052.pdf" class="btn btn-default" target="_blank">Paper </a>
+             </div>
+
+      </div><!-- end of row -->
+
+  <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="images/iccv2021.png"  alt=""><br>
+                 <img src="images/four_optimization_results.gif"  alt="">
+
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>Deep Permutation Equivariant Structure from Motion</h2>
+                 <p>
+                   Dror Moran*, Hodaya Koslowsky*, Yoni Kasten, Haggai Maron, Meirav Galun, Ronen Basri (*equal contribution)<br>
+                   <i> International Conference on Computer Vision 2021 (ICCV'21)   </i> <br>
+                   <p style="color:red;"> Oral presentation</p>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="Existing deep methods produce highly accurate 3D reconstructions in stereo and multiview stereo settings, i.e., when cameras are both internally and externally calibrated. Nevertheless, the challenge of simultaneous recovery of camera poses and 3D scene structure in multiview settings with deep networks is still outstanding. Inspired by projective factorization for Structure from Motion (SFM) and by deep matrix completion techniques, we propose a neural network architecture that, given a set of point tracks in multiple images of a static scene, recovers both the camera parameters and a (sparse) scene structure by minimizing an unsupervised reprojection loss. Our network architecture is designed to respect the structure of the problem: the sought output is equivariant to permutations of both cameras and scene points. Notably, our method does not require initialization of camera parameters or 3D point locations. We test our architecture in two setups: (1) single scene reconstruction and (2) learning from multiple scenes. Our experiments, conducted on a variety of datasets in both internally calibrated and uncalibrated settings, indicate that our method accurately recovers pose and structure, on par with classical state of the art methods. Additionally, we show that a pre-trained network can be used to reconstruct novel scenes using inexpensive fine-tuning with no loss of accuracy."> Abstract</a>
+                 <a href="https://arxiv.org/pdf/2104.06703.pdf" class="btn btn-default" target="_blank">Paper </a><a href="https://github.com/drormoran/Equivariant-SFM" class="btn btn-default" target="_blank">Code</a>
+             </div>
+
+      </div><!-- end of row -->
+
+
+
+      <div class="row" id="templatemo_publications_LargeScaleBD">
+<div class="col-md-1"></div>
+<div class="col-md-5 col-sm-7 col-xs-24">
+<img src="images/hybrid.png" alt="image 1">
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-16">
+<h2>A hybrid global structure from motion method for synchronously
+estimating global rotations and global translations</h2>
+<p>Xin Wang, Teng Xiao, Yoni Kasten<p>
+<tab1>  </tab1>
+<p><i>ISPRS Journal of Photogrammetry and Remote Sensing 2021</i></p>
+</p>
+<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
+<a class="btn btn-default abstract" ptitle="A hybrid global structure from motion method for synchronously estimating global rotations and global translations"
+abstract="Over the last few decades, the methods of global image orientation, which is also called global SfM, have attracted a lot of attention from researchers, mainly thanks to its advantage of time efficiency. Based on the input of relative orientation results, most conventional global SfM methods employ a two-step strategy consisting of global rotation estimation and global translation estimation. This paper, on the contrary, introduces a hybrid global approach that intends to solve global rotations and translations synchronously, but hierarchically. To improve the robustness and time efficiency, we first propose a novel efficient method that is much faster than the previous approaches for extracting an optimal minimum cover of a connected image triplet set (OMCTS). The OMCTS makes all the available images contained in a minimum number of connected image triplets, as well as all of those selected triplets, satisfy the constraint that the three corresponding relative orientations are as compatible as possible to each other. In order to solve non-collinear triplets in the OMCTS, some fundamental characterizations of essential matrices in the multiple-image setting are used, and image pose parameters are then estimated via averaging the constrained essential matrices. For the collinear triplets, the above approach is invalid and the image pose parameters are then alternatively determined from the relative orientations using the depth of tie points from each individual local spatial intersection. Finally, all image orientations are moved to a common coordinate system by traversing the solved connected triplets using similarity transformations. Compared to the state-of-the-art global SfM methods, the performance and capability of the proposed hybrid approach are thoroughly demonstrated on various public datasets (mainly including ordered and unordered internet images, oblique aerial images, hard and complex datasets, etc.). ">Abstract</a>
+<a href="https://www.researchgate.net/profile/Xin-Wang-305/publication/349394725_A_hybrid_global_structure_from_motion_method_for_synchronously_estimating_global_rotations_and_global_translations/links/602e23ba4585158939b080c9/A-hybrid-global-structure-from-motion-method-for-synchronously-estimating-global-rotations-and-global-translations.pdf" target="_blank" class="btn btn-default abstract" ptitle="A hybrid global structure from motion method for synchronously estimating global rotations and global translations">Paper</a>
+
+<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
+</div>
+        </div>
+
+
+
   <div class="row" id="templatemo_publications_LargeScaleBD">
 <div class="col-md-1"></div>
 <div class="col-md-5 col-sm-7 col-xs-24">
@@ -150,8 +240,9 @@ My PhD research is mostly in the domain of 3D computer vision (e.g. Camera Local
 <h2>Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance</h2>
 <p>Lior Yariv, Yoni Kasten, Dror Moran, Meirav Galun, Matan Atzmon, Ronen Basri, Yaron Lipman<p>
 <tab1>  </tab1>
-<p><i>Neural Information Processing Systems 2020 (NeurIPS'20), spotlight presentation</i></p>
+<p><i>Neural Information Processing Systems 2020 (NeurIPS'20)</i></p>
 </p>
+     <p style="color:red;"> Spotlight presentation</p>
 <!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
 <a class="btn btn-default abstract" ptitle="Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance"
 abstract="In this work we address the challenging problem of multiview 3D surface reconstruction. We introduce a neural network architecture that simultaneously learns the unknown geometry, camera parameters, and a neural renderer that approximates the light reflected from the surface towards the camera. The geometry is represented as a zero level-set of a neural network, while the neural renderer, derived from the rendering equation, is capable of (implicitly) modeling a wide set of lighting conditions and materials. We trained our network on real world 2D images of objects with different material properties, lighting conditions, and noisy camera initializations from the DTU MVS dataset. We found our model to produce state of the art 3D surface reconstructions with high fidelity, resolution and detail.">Abstract</a>
@@ -183,6 +274,27 @@ abstract="Recent theoretical work has shown that massively overparameterized neu
 <!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
 </div>
         </div>
+
+
+       <div class="row" id="templatemo_publications_LargeScaleBD">
+             <div class="col-md-1"></div>
+             <div class="col-md-5 col-sm-7 col-xs-24">
+                 <img src="images/miccaiw.png"  alt="">
+
+             </div>
+             <div class="col-md-1"></div>
+             <div class="col-md-16">
+                 <h2>End-To-End Convolutional Neural Network for 3D Reconstruction of Knee Bones From Bi-Planar X-Ray Images</h2>
+                 <p>
+                   Yoni Kasten*, Daniel Doktofsky*, Ilya Kovler* (*equal contribution)<br>
+                   <i> International Workshop on Machine Learning for Medical Image Reconstruction 2020  </i> <br>
+                 </p>
+                 <a class="btn btn-default abstract" ptitle="We present an end-to-end Convolutional Neural Network (CNN) approach for 3D reconstruction of knee bones directly from two bi-planar X-ray images. Clinically, capturing the 3D models of the bones is crucial for surgical planning, implant fitting, and postoperative evaluation. X-ray imaging significantly reduces the exposure of patients to ionizing radiation compared to Computer Tomography (CT) imaging, and is much more common and inexpensive compared to Magnetic Resonance Imaging (MRI) scanners. However, retrieving 3D models from such 2D scans is extremely challenging. In contrast to the common approach of statistically modeling the shape of each bone, our deep network learns the distribution of the bones’ shapes directly from the training images. We train our model with both supervised and unsupervised losses using Digitally Reconstructed Radiograph (DRR) images generated from CT scans. To apply our model to X-Ray data, we use style transfer to transform between X-Ray and DRR modalities. As a result, at test time, without further optimization, our solution directly outputs a 3D reconstruction from a pair of bi-planar X-ray images, while preserving geometric constraints. Our results indicate that our deep learning model is very efficient, generalizes well and produces high quality reconstructions."> Abstract</a>
+                 <a href="https://arxiv.org/pdf/2004.00871.pdf" class="btn btn-default" target="_blank">Paper </a>
+             </div>
+
+      </div><!-- end of row -->
+
 
 
   <div class="row" id="templatemo_publications_LargeScaleBD">
