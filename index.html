@@ -137,6 +137,72 @@ I did my B.Sc. in Electrical Engineering at the Hebrew University of Jerusalem, 
         <div class="row">
             <h1>Publications</h1>
         </div>
+        
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="images/mug_set_propagated_x4_grid.png"  alt="">
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-16">
+                <h2>Neural Congealing: Aligning Images to a Joint Semantic Atlas</h2>
+                <p>
+                    Dolev Ofri-Amar, Michal Geyer, Yoni Kasten, Tali Dekel <br>
+                  <i> CVPR 2023 </i>
+                </p>
+                <a class="btn btn-default abstract" ptitle="We present Neural Congealing -- a zero-shot self-supervised framework for detecting and jointly aligning semantically-common content across a given set of images. Our approach harnesses the power of pre-trained DINO-ViT features to learn: (i) a joint semantic atlas -- a 2D grid that captures the mode of DINO-ViT features in the input set, and (ii) dense mappings from the unified atlas to each of the input images. We derive a new robust self-supervised framework that optimizes the atlas representation and mappings per image set, requiring only a few real-world images as input without any additional input information (e.g., segmentation masks). Notably, we design our losses and training paradigm to account only for the shared content under severe variations in appearance, pose, background clutter or other distracting objects. We demonstrate results on a plethora of challenging image sets including sets of mixed domains (e.g., aligning images depicting sculpture and artwork of cats), sets depicting related yet different object categories (e.g., dogs and tigers), or domains for which large-scale training data is scarce (e.g., coffee mugs). We thoroughly evaluate our method and show that our test-time optimization approach performs favorably compared to a state-of-the-art method that requires extensive training on large-scale datasets.     "> Abstract</a>
+                <a href="https://arxiv.org/pdf/2302.03956.pdf" class="btn btn-default" target="_blank">Paper </a>
+                <a href="https://neural-congealing.github.io/" class="btn btn-default" target="_blank">Project page </a>
+                   <a href="https://github.com/dolev104/neural_congealing" class="btn btn-default" target="_blank">Code </a>
+
+            </div>
+        
+     </div><!-- end of row -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="images/semi_transparent_effects.png"  alt="">
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-16">
+                <h2>Text2LIVE: Text-Driven Layered Image and Video Editing</h2>
+                <p>
+                    Omer Bar-Tal*, Dolev Ofri-Amar*, Rafail Fridman*, Yoni Kasten, Tali Dekel <br>
+                  <i> ECCV 2022 </i>
+                </p>
+                <p style="color:red;"> Oral presentation </p>
+                <a class="btn btn-default abstract" ptitle="We present a method for zero-shot, text-driven appearance manipulation in natural images and videos. Specifically, given an input image or video and a target text prompt, our goal is to edit the appearance of existing objects (e.g., object's texture) or augment the scene with new visual effects (e.g., smoke, fire) in a semantically meaningful manner. Our framework trains a generator using an internal dataset of training examples, extracted from a single input (image or video and target text prompt), while leveraging an external pre-trained CLIP model to establish our losses. Rather than directly generating the edited output, our key idea is to generate an edit layer (color+opacity) that is composited over the original input. This allows us to constrain the generation process and maintain high fidelity to the original input via novel text-driven losses that are applied directly to the edit layer. Our method neither relies on a pre-trained generator nor requires user-provided edit masks. Thus, it can perform localized, semantic edits on high-resolution natural images and videos across a variety of objects and scenes.   "> Abstract</a>
+                <a href="https://arxiv.org/pdf/2204.02491.pdf" class="btn btn-default" target="_blank">Paper </a>
+                <a href="https://text2live.github.io/" class="btn btn-default" target="_blank">Project page </a>
+                   <a href="https://github.com/omerbt/Text2LIVE" class="btn btn-default" target="_blank">Code </a>
+
+            </div>
+
+     </div><!-- end of row -->
+
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="images/teaser_sil.png"  alt="">
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-16">
+                <h2>Learning to Estimate Multi-view Pose from Object Silhouettes</h2>
+                <p>
+                  Yoni Kasten, True Price, David Geraghty, Jan-Michael Frahm <br>
+                  <i> Recovering 6D Object Pose Workshop at ECCV 2022 </i>
+                </p>
+                <a class="btn btn-default abstract" ptitle="While Structure-from-Motion pipelines certainly have their success cases in the task of 3D object reconstruction from multiple images, they still fail on many common objects that lack distinctive texture or have complex appearance qualities. The central problem lies in 6DOF camera pose estimation for the source images: without the ability to obtain a good estimate of the epipolar geometries, all state-of-the-art methods will fail. Although alternative solutions exist for specific objects, general solutions have proved elusive. In this work, we revisit the notion that silhouette cues can provide reasonable constraints on multi-view pose configurations when texture and priors are unavailable. Specifically, we train a neural network to holistically predict camera poses and pose confidences for a given set of input silhouette images, with the hypothesis that the network will be able to learn cues for multi-view relationships in a data-driven way. We show that our network generalizes to unseen synthetic and real object instances under reasonable assumptions about the input pose distribution of the images, and that the estimates are suitable to initialize state-of-the-art 3D reconstruction methods."> Abstract</a>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-25085-9_8" class="btn btn-default" target="_blank">Paper </a>
+                <a href="https://vimeo.com/showcase/9946695/video/768455972" class="btn btn-default" target="_blank">Presentation (by True Price) </a>
+              
+
+            </div>
+
+     </div><!-- end of row -->
 
 
        <div class="row" id="templatemo_publications_LargeScaleBD">
