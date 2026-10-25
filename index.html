@@ -1,815 +1,747 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-<title>Yoni Kasten's Homepage</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="A PhD student at the Weizmann institute of science, supervised by Prof. Ronen Basri." />
-<meta name="author" content="Yoni Kasten" />
-
-<!-- favicons -->
-<!-- <link rel="shortcut icon" href="images/templatemo_favicon.ico"> -->
-<!-- bootstrap core CSS -->
-<link href="js/bootstrap.css" rel="stylesheet">
-<!-- fancybox CSS -->
-<link href="js/jquery.css" rel="stylesheet">
-<!-- flex slider CSS -->
-<link href="js/flexslider.css" rel="stylesheet">
-<!-- custom styles for this template -->
-<link href="js/templatemo_style.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-<style>
-#cf3 {
-align:left
-position:relative;
-width:240px;
-margin:0 auto;
-}
-
-#cf3 img {
-position:absolute;
-left:0;
--webkit-transition: opacity 0.1s ease-in-out;
--moz-transition: opacity 0.1s ease-in-out;
--o-transition: opacity 0.1s ease-in-out;
-transition: opacity 0.1s ease-in-out;
-}
-
-@keyframes cf3FadeInOut {
-0% {
-opacity:1;
-}
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
-}
-
-#cf3 img.top {
-animation-name: cf3FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 1s;
-animation-direction: alternate;
-}
-
-</style>
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yoni Kasten — Assistant Professor in the Faculty of Electrical and Computer Engineering at the Technion and Senior Research Scientist at NVIDIA Research, Tel Aviv Lab. Leading a 3D/4D computer vision group focused on scene reconstruction, SfM, neural surfaces, and text-driven generation of 3D and 4D scenes.">
+  <meta name="author" content="Yoni Kasten">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Yoni Kasten · 3D/4D Computer Vision</title>
+  <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/site.css?v=warm-restored">
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="row">
-           
-            <div class="col-md-3 hidden-xs"></div>
-            <div class="col-xs-3 col-xs-offset-20 visible-xs">
-                <a href="#" id="mobile_menu"><span class="glyphicon glyphicon-align-justify"></span></a>
-            </div>
-            <div class="col-xs-24 visible-xs" id="mobile_menu_list">
-                <ul style="display: none;">
-<li><a href="#templatemo_about" class="current">About</a></li>
-                    <!-- <li><a href="#templatemo_slideshow">Slideshow</a></li> -->
-                    <li><a href="#templatemo_publications">Publications</a></li>
-                </ul>
-            </div>
-            <div class="col-md-16 col-sm-18 hidden-xs" id="templatemo-nav-bar">
-                <ul class="nav navbar-right">
-<li><a href="#templatemo_about" class="current">About</a></li>
-                    <!-- <li><a href="#templatemo_slideshow">Slideshow</a></li> -->
-                    <li><a href="#templatemo_publications">Publications</a></li>
-                </ul>
-            </div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#templatemo_about" aria-label="Yoni Kasten, home">
+        <span class="monogram" aria-hidden="true">yk.</span><span>Yoni Kasten</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#templatemo_about">About</a>
+        <a href="#students">Group</a>
+        <a href="#news">News</a>
+        <a href="#templatemo_publications">Research</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
     </div>
-</header><!-- end of templatemo_header -->
+  </header>
 
-<section id="templatemo_about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div id="my_photo" class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/profilenew.jpg" alt="image 1">
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Yoni Kasten</h2>
-<p>
-I am a Senior Research Scientist at NVIDIA Research and an incoming Assistant Professor in the Faculty of Electrical and Computer Engineering at the Technion. I'm interested in Computer Vision and Machine Learning. My research is mostly in the domain of 3D computer vision (e.g. Camera Localization, Structure From Motion and 3D reconstruction) and has recently focused on deep neural models for computer vision problems that involve geometry. 
-	I completed my PhD at Weizmann Institute of Science
-under the supervision of <a href="http://www.weizmann.ac.il/math/ronen/home/" target="_blank">Prof. Ronen Basri</a> from the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science.
-I did my B.Sc. in Electrical Engineering at the Hebrew University of Jerusalem, where I also did my M.Sc. in Computer Science under the supervision of <a href="https://www.cs.huji.ac.il/~peleg/" target="_blank">Prof. Shmuel Peleg</a> and <a href="https://www.cse.huji.ac.il/~werman/" target="_blank">Prof. Michael Werman. </a>
-<font size=1></font></br>
-<b>Email:</b> yonikasten <font color="grey">at</font> gmail <font color="grey">dot</font> com</br>
-</p>
- <p>
-                <h4>News</h4>
-                <ul>
-                  <li>I will be joining the Faculty of Electrical and Computer Engineering at the Technion as an Assistant Professor.</li>
-			<li> I will serve as an area chair at NeurIPS 2025.</li>
-                <li>  Our paper TriTex has been accepted to CVPR 2025. </li>
-                <li> Our paper RESFM has been accepted to ICLR 2025. </li>
+  <main id="main" class="container">
+    <section class="hero" id="templatemo_about" aria-labelledby="name">
+      <div class="intro-heading">
+        <h1 id="name">Yoni Kasten</h1>
+        <p class="role"><strong>Assistant Professor</strong> at the Technion
+          <span>Faculty of Electrical &amp; Computer Engineering</span>
+          <strong>Senior Research Scientist</strong> at NVIDIA Research
+        </p>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <img src="images/profilenew.jpg" alt="Yoni Kasten in the mountains" width="2004" height="1763" fetchpriority="high">
+        </div>
+      </figure>
+      <div class="intro-body">
+        <p>I lead the 3D/4D computer vision group in the Faculty of Electrical and Computer Engineering at the Technion, within the <a href="https://cgm.technion.ac.il/" target="_blank" rel="noopener noreferrer">Computer Graphics &amp; Multimedia (CGM) Lab</a>. I am also a Senior Research Scientist at <a href="https://research.nvidia.com/labs/par/#people" target="_blank" rel="noopener noreferrer">NVIDIA Research, Tel Aviv Lab</a>. My research spans 3D and 4D reconstruction of static and dynamic scenes from images and videos, including joint recovery of geometry and motion, structure from motion (SfM), multi-view geometry, and neural surface reconstruction. I also explore diffusion models for text-driven generation of 3D and 4D scenes.</p>
+        <aside class="recruitment-note" aria-label="Prospective students">
+          <p>I am looking for <strong>outstanding and highly motivated M.Sc. and PhD students</strong> to join our group. <a href="mailto:yonikasten@gmail.com">Please get in touch</a> if you’re interested.</p>
+        </aside>
+        <div class="hero-links">
+          <a class="contact-button" href="mailto:yonikasten@gmail.com">Email</a>
+          <a class="text-link" href="https://scholar.google.com/citations?user=kc4-e8oAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a class="text-link" href="https://x.com/yoni_kasten" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+          <a class="text-link" href="https://cgm.technion.ac.il/" target="_blank" rel="noopener noreferrer">CGM Lab</a>
+        </div>
+      </div>
+      <p class="academic-bio">I completed my PhD in the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science, supervised by <a href="http://www.weizmann.ac.il/math/ronen/home/" target="_blank" rel="noopener noreferrer">Prof. Ronen Basri</a>. I received my B.Sc. in Electrical Engineering and M.Sc. in Computer Science from the Hebrew University of Jerusalem, where my M.Sc. was supervised by <a href="https://www.cs.huji.ac.il/~peleg/" target="_blank" rel="noopener noreferrer">Prof. Shmuel Peleg</a> and <a href="https://www.cse.huji.ac.il/~werman/" target="_blank" rel="noopener noreferrer">Prof. Michael Werman</a>.</p>
+    </section>
 
-                </ul>
-                </p>
-  <p>
-                <h4>Teaching</h4>
-                <ul>
-                    <li>2021/spring (WIS):  Multiple View Geometry for Computer Vision Applications (lecturer) </li>
-                    <li>2020/spring (WIS):  Multiple View Geometry for Computer Vision Applications (lecturer) </li>
-                <li>2018/winter (WIS):  Introduction to Computer Vision (TA) </li>
-				<li>2016/winter (HUJI):  Image Processing (TA) </li>
-				<li>2015/winter (HUJI):  Image Processing (TA) </li>
-                </ul>
-                </p>
+    <section class="students-section" id="students" aria-labelledby="students-heading">
+      <div>
+        <h2 class="section-heading" id="students-heading">Group</h2>
+      </div>
+      <ul class="student-list">
+        <li><strong>Ori Fischler</strong><span>M.Sc. student</span></li>
+        <li><strong>Nir Tevet</strong><span>M.Sc. student</span></li>
+        <li><strong>Nitzan Alt</strong><span>M.Sc. student</span></li>
+        <li><strong>Adam Betis</strong><span>M.Sc. student</span></li>
+      </ul>
+    </section>
+
+    <section class="news-section" id="news" aria-labelledby="news-heading">
+      <div>
+        <h2 class="section-heading" id="news-heading">News</h2>
+      </div>
+      <ul class="news-list">
+        <li><time class="news-label" datetime="2026-10">Oct 2026</time><span>I joined the Faculty of Electrical and Computer Engineering at the <strong>Technion</strong> as an <strong>Assistant Professor</strong>, where I lead the <strong>3D/4D computer vision group</strong>.</span></li>
+        <li><time class="news-label" datetime="2026-09">Sep 2026</time><span>Our paper <a href="#paper-fast-4d-mesh-generation-by-spatio-temporal-attention-chains">Fast 4D Mesh Generation by Spatio-Temporal Attention Chains</a> was accepted to <strong>NeurIPS 2026</strong>.</span></li>
+        <li><time class="news-label" datetime="2026-07">Jul 2026</time><span>I received an <strong>ISF grant</strong> for <strong>Feed-Forward Dense 4D Reconstruction Guided by 2D Motion Cues</strong>.</span></li>
+        <li><time class="news-label" datetime="2026-07-14">Jul 2026</time><span>I presented <a href="https://icerm.brown.edu/video_archive/4767" target="_blank" rel="noopener noreferrer">Fast and Robust 4D Reconstruction via Point Track Processing and Attention Chains</a> at the <a href="https://icerm.brown.edu/program/topical_workshop/tw-26-m3d" target="_blank" rel="noopener noreferrer">Mathematics of 3D Reconstruction</a> workshop at <strong>ICERM, Brown University</strong>.</span></li>
+        <li><span class="news-label">2026</span><span>I served as an area chair at <strong>ICML 2026</strong> and <strong>NeurIPS 2026</strong>.</span></li>
+        <li><span class="news-label">2025</span><span>I served as an area chair at <strong>NeurIPS 2025</strong>.</span></li>
+        <li><time class="news-label" datetime="2025-02">Feb 2025</time><span>Our paper <strong>TriTex</strong> was accepted to <strong>CVPR 2025</strong>.</span></li>
+        <li><time class="news-label" datetime="2025-01">Jan 2025</time><span>Our paper <strong>RESfM</strong> was accepted to <strong>ICLR 2025</strong>.</span></li>
+      </ul>
+    </section>
+
+    <section class="publications-section" id="templatemo_publications" aria-labelledby="publications-heading">
+      <div class="section-title-row">
+        <h2 class="section-heading" id="publications-heading">Publications</h2>
+      </div>
+      <div id="publication-list">
+
+        <section class="publication-year" aria-labelledby="year-2026">
+          <h3 class="year-heading" id="year-2026">2026</h3>
+          <article class="publication" data-year="2026" aria-labelledby="paper-joints-camera-action-co-generating-3d-motion-and-video-for-arbitrary-rigs">
+            <div class="publication-media">
+              <img src="images/jca.gif" alt="JCA animation: generated video and synchronized 3D rig motion of a monkey jumping over a bar" width="600" height="338" loading="lazy" decoding="async">
             </div>
-        </div><!-- end of row -->
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-joints-camera-action-co-generating-3d-motion-and-video-for-arbitrary-rigs"><a href="https://research.nvidia.com/labs/par/projects/jca/" target="_blank" rel="noopener noreferrer">Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs</a></h4>
+              <p class="authors">Noam Rotstein, Yoad Tewel, Chen Tessler, Haggai Maron, Gal Chechik, Or Litany, <strong>Yoni Kasten</strong>, Yuval Atzmon</p>
+              <p class="publication-meta"><span>arXiv 2026</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2610.28632" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://research.nvidia.com/labs/par/projects/jca/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs</span></summary>
+                <p>Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For instance, a video model can show a monkey jumping over a crossbar, but it cannot return that jump as replayable 3D motion placed in the 3D scene. Here we present a model that directly co-generates the video and 3D motion for any supplied rig, along with a camera that registers this motion to the scene. Prior video–motion models either handle only human skeletons, often adding billions of parameters, or triangulate 3D motion from generated 2D pose maps. We instead keep 3D motion in a separate model that supports arbitrary skeletons, and connect it to a pretrained video model through a small set of cross-attention layers. This separation lets the motion model first learn how skeletons move from motion-only data, which is easier to obtain and augment than paired video. Additionally, our model learns to locate each joint in the video frames, which lets us recover the camera and place the 3D motion in the scene. To train across many skeletons, we use a generative video editor to place animated 3D assets in scenes suited to their actions, curating the edits so their known motion remains valid. Together with human and robot video, this yields nearly 200K training pairs. Our evaluations demonstrate that our model animates diverse rigs from text more faithfully than video-first pipelines, and its motion responds to the surrounding scene. It also turns video into rig motion, rig motion into video, and enables keyframe-based control of the 3D motion.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2026" aria-labelledby="paper-fast-4d-mesh-generation-by-spatio-temporal-attention-chains">
+            <div class="publication-media fast4d-preview">
+              <img class="fast4d-scene" src="images/fast4dmesh-bear.gif" alt="Fast 4D Mesh animation: an enlarged reconstruction of a moving bear, with the source video shown in the upper-right inset" width="720" height="429" loading="lazy" decoding="async">
+              <div class="fast4d-input" aria-hidden="true">
+                <img src="images/fast4dmesh-bear.gif" alt="" width="720" height="429" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-fast-4d-mesh-generation-by-spatio-temporal-attention-chains"><a href="https://research.nvidia.com/labs/par/projects/fast4dmesh/" target="_blank" rel="noopener noreferrer">Fast 4D Mesh Generation by Spatio-Temporal Attention Chains</a></h4>
+              <p class="authors">Dvir Samuel, Yuval Atzmon, Gal Chechik, <strong>Yoni Kasten</strong></p>
+              <p class="publication-meta"><span>NeurIPS 2026</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2605.19786" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://research.nvidia.com/labs/par/projects/fast4dmesh/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Fast 4D Mesh Generation by Spatio-Temporal Attention Chains</span></summary>
+                <p>4D mesh generation has recently emerged as a powerful paradigm for recovering dynamic 3D structure from videos, but existing methods remain slow, computationally expensive, and difficult to scale to longer sequences. We introduce a training-free approach that accelerates 4D mesh generation while improving temporal correspondence quality. Our key observation is that temporal correspondences emerge inside a 4D backbone long before its generated meshes become visually accurate. We exploit this with a general framework we call Spatio-Temporal Attention Chain which propagates information across space and time. Starting from vertices on an anchor mesh, the chain maps vertices to latent tokens. It then follows temporal correspondences in latent space, and recovers frame-specific vertices through latent-to-vertex attention. This design avoids expensive explicit matching while preserving anchor mesh details and thereby improving dynamic mesh geometry and temporal consistency. Compared to state-of-the-art, our method generates a 4D mesh in 9 seconds, achieving a 13× speedup while producing higher-quality results. Moreover, our approach scales to videos up to 16× longer without degrading mesh quality. Beyond generation, the improved correspondences enable competitive zero-shot performance on two downstream tasks: 2D object tracking and 4D tracking. We further show that our framework enables reliable camera estimation, a capability not supported by prior 4D mesh generation methods.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2026" aria-labelledby="paper-lost-in-space-vision-language-models-struggle-with-relative-camera-pose-estimation">
+            <div class="publication-media">
+              <img src="images/lost-in-space.png" alt="Single-view and multi-view spatial reasoning: relative camera pose estimation requires cross-image correspondence and camera-perspective reasoning" width="580" height="462" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-lost-in-space-vision-language-models-struggle-with-relative-camera-pose-estimation"><a href="https://arxiv.org/abs/2601.22228" target="_blank" rel="noopener noreferrer">Lost in Space? Vision-Language Models Struggle with Relative Camera Pose Estimation</a></h4>
+              <p class="authors">Ken Deng, Yifu Qiu, <strong>Yoni Kasten</strong>, Shay B. Cohen, Yftah Ziser</p>
+              <p class="publication-meta"><span>arXiv 2026</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2601.22228" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/kdeng03/lost-in-space" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Lost in Space? Vision-Language Models Struggle with Relative Camera Pose Estimation</span></summary>
+                <p>We study whether vision-language models (VLMs) can solve relative camera pose estimation (RCPE) from image pairs, a direct test of multi-view spatial reasoning. We cast RCPE as a discrete verbal classification task and introduce VRRPI-Bench, built from real RGB-D frames with object-centric camera motion, and VRRPI-Diag, which isolates individual motion degrees of freedom. Humans (0.91) and specialized geometric pipelines such as LoFTR (0.99) solve the task reliably, yet the best VLM reaches only 0.66 and most others remain near random. Our analyses show that this gap is not basic spatial competence: strong VLMs are near ceiling on single-image benchmarks, but most remain near random once reasoning must span views. They are unstable under source-target reversal (best 59.7% consistency) and remain weak even in simplified single-DoF settings, especially on optical-axis motions such as roll and depth translation (GPT-5: 0.46 on roll). These failures are useful: they localize concrete missing capabilities, namely cross-view correspondence, view-consistent reasoning, and projective camera-motion understanding, making RCPE a targeted diagnostic for improving multi-view spatial reasoning in VLMs.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2025">
+          <h3 class="year-heading" id="year-2025">2025</h3>
+          <article class="publication" data-year="2025" aria-labelledby="paper-motion-by-queries-identity-motion-trade-offs-in-text-to-video-generation">
+            <div class="publication-media">
+              <img src="images/motionbyqueries-sloth.gif" alt="Motion by Queries animation: a person dancing in the source video alongside a cartoon sloth following the same dance motion" width="604" height="195" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-motion-by-queries-identity-motion-trade-offs-in-text-to-video-generation"><a href="https://research.nvidia.com/labs/par/projects/motionbyqueries/" target="_blank" rel="noopener noreferrer">Identity-Motion Trade-offs in Text-to-Video Generation</a></h4>
+              <p class="authors">Yuval Atzmon, Rinon Gal, Yoad Tewel, <strong>Yoni Kasten</strong>, Gal Chechik</p>
+              <p class="publication-meta"><span>BMVC 2025</span></p>
+              <div class="publication-links">
+                <a href="https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_159/paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://research.nvidia.com/labs/par/projects/motionbyqueries/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Identity-Motion Trade-offs in Text-to-Video Generation</span></summary>
+                <p>Text-to-video diffusion models have shown remarkable progress in generating coherent video clips from textual descriptions. However, the interplay between motion, structure, and identity representations in these models remains under-explored. Here, we investigate how self-attention query (Q) features simultaneously govern motion, structure, and identity and examine the challenges arising when these representations interact. Our analysis reveals that Q affects not only layout, but that during denoising Q also has a strong effect on subject identity, making it hard to transfer motion without the side-effect of transferring identity. Understanding this dual role enabled us to control query feature injection (Q-injection) and demonstrate two applications: (1) a zero-shot motion transfer method – implemented with VideoCrafter2 and WAN 2.1 – that is 10× more efficient than existing approaches, and (2) a technique for consistent multi-shot video generation, where characters maintain identity across multiple video shots while Q-injection enhances motion fidelity.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2025" aria-labelledby="paper-gsvisloc-generalizable-visual-localization-for-gaussian-splatting-scene-representations">
+            <div class="publication-media">
+              <img src="images/gsvisloc.png" alt="GSVisLoc matches 3D Gaussian scene regions with 2D query-image patches for camera localization" width="960" height="489" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-gsvisloc-generalizable-visual-localization-for-gaussian-splatting-scene-representations"><a href="https://gsvisloc.github.io/" target="_blank" rel="noopener noreferrer">Generalizable Visual Localization for Gaussian Splatting Scene Representations</a></h4>
+              <p class="authors">Fadi Khatib*, Dror Moran*, Guy Trostianetsky, <strong>Yoni Kasten</strong>, Meirav Galun, Ronen Basri (*equal contribution)</p>
+              <p class="publication-meta"><span>ICCV Workshops 2025 · CALIPOSE</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2508.18242" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://gsvisloc.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Generalizable Visual Localization for Gaussian Splatting Scene Representations</span></summary>
+                <p>We introduce GSVisLoc, a visual localization method designed for 3D Gaussian Splatting (3DGS) scene representations. Given a 3DGS model of a scene and a query image, our goal is to estimate the camera's position and orientation. We accomplish this by robustly matching scene features to image features. Scene features are produced by downsampling and encoding the 3D Gaussians while image features are obtained by encoding image patches. Our algorithm proceeds in three steps, starting with coarse matching, then fine matching, and finally by applying pose refinement for an accurate final estimate. Importantly, our method leverages the explicit 3DGS scene representation for visual localization without requiring modifications, retraining, or additional reference images. We evaluate GSVisLoc on both indoor and outdoor scenes, demonstrating competitive localization performance on standard benchmarks while outperforming existing 3DGS-based baselines. Moreover, our approach generalizes effectively to novel scenes without additional training.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2025" aria-labelledby="paper-tritex-learning-texture-from-a-single-mesh-via-triplane-semantic-features">
+            <div class="publication-media">
+              <img src="images/tritex.gif" alt="TriTex: Learning Texture from a Single Mesh via Triplane Semantic Features — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-tritex-learning-texture-from-a-single-mesh-via-triplane-semantic-features"><a href="https://danacohen95.github.io/TriTex/" target="_blank" rel="noopener noreferrer">TriTex: Learning Texture from a Single Mesh via Triplane Semantic Features</a></h4>
+              <p class="authors">Dana Cohen-Bar, Daniel Cohen-Or, Gal Chechik, <strong>Yoni Kasten</strong></p>
+              <p class="publication-meta"><span>CVPR 2025</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2503.16630" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://danacohen95.github.io/TriTex/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for TriTex: Learning Texture from a Single Mesh via Triplane Semantic Features</span></summary>
+                <p>As 3D content creation continues to grow, transferring semantic textures between 3D meshes remains a significant challenge in computer graphics. While recent methods leverage text-to-image diffusion models for texturing, they often struggle to preserve the appearance of the source texture during texture transfer. We present TriTex, a novel approach that learns a volumetric texture field from a single textured mesh by mapping semantic features to surface colors. Using an efficient triplane-based architecture, our method enables semantic-aware texture transfer to a novel target mesh. Despite training on just one example, it generalizes effectively to diverse shapes within the same category. Extensive evaluation on our newly created benchmark dataset shows that TriTex achieves superior texture transfer quality and fast inference times compared to existing methods. Our approach advances single-example texture transfer, providing a practical solution for maintaining visual coherence across related 3D models in applications like game development and simulation.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2025" aria-labelledby="paper-resfm-robust-equivariant-multiview-structure-from-motion">
+            <div class="publication-media">
+              <img src="images/resfm.gif" alt="RESfM: Robust Deep Equivariant Structure from Motion — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-resfm-robust-equivariant-multiview-structure-from-motion"><a href="https://robust-equivariant-sfm.github.io/" target="_blank" rel="noopener noreferrer">RESfM: Robust Deep Equivariant Structure from Motion</a></h4>
+              <p class="authors">Fadi Khatib, <strong>Yoni Kasten</strong>, Dror Moran, Meirav Galun, Ronen Basri</p>
+              <p class="publication-meta"><span>ICLR 2025</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2404.14280" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://robust-equivariant-sfm.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for RESfM: Robust Deep Equivariant Structure from Motion</span></summary>
+                <p>Multiview Structure from Motion is a fundamental and challenging computer vision problem. A recent deep-based approach utilized matrix equivariant architectures for simultaneous recovery of camera pose and 3D scene structure from large image collections. That work, however, made the unrealistic assumption that the point tracks given as input are almost clean of outliers. Here, we propose an architecture suited to dealing with outliers by adding a multiview inlier/outlier classification module that respects the model equivariance and by utilizing a robust bundle adjustment step. Experiments demonstrate that our method can be applied successfully in realistic settings that include large image collections and point tracks extracted with common heuristics that include many outliers, achieving state-of-the-art accuracies in almost all runs, superior to existing deep-based methods and on-par with leading classical (non-deep) sequential and global methods.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2024">
+          <h3 class="year-heading" id="year-2024">2024</h3>
+          <article class="publication" data-year="2024" aria-labelledby="paper-fast-encoder-based-3d-from-casual-videos-via-point-track-processing">
+            <div class="publication-media">
+              <img src="images/tracks_to_4d.gif" alt="Fast Encoder-Based 3D from Casual Videos via Point Track Processing — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-fast-encoder-based-3d-from-casual-videos-via-point-track-processing"><a href="https://tracks-to-4d.github.io/" target="_blank" rel="noopener noreferrer">Fast Encoder-Based 3D from Casual Videos via Point Track Processing</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, Wuyue Lu, Haggai Maron</p>
+              <p class="publication-meta"><span>NeurIPS 2024</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2404.07097" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://tracks-to-4d.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Fast Encoder-Based 3D from Casual Videos via Point Track Processing</span></summary>
+                <p>This paper addresses the long-standing challenge of reconstructing 3D structures from videos with dynamic content. Current approaches to this problem were not designed to operate on casual videos recorded by standard cameras or require a long optimization time. Aiming to significantly improve the efficiency of previous approaches, we present TracksTo4D, a learning-based approach that enables inferring 3D structure and camera positions from dynamic content originating from casual videos using a single efficient feed-forward pass. To achieve this, we propose operating directly over 2D point tracks as input and designing an architecture tailored for processing 2D point tracks. Our proposed architecture is designed with two key principles in mind: (1) it takes into account the inherent symmetries present in the input point tracks data, and (2) it assumes that the movement patterns can be effectively represented using a low-rank approximation. TracksTo4D is trained in an unsupervised way on a dataset of casual videos utilizing only the 2D point tracks extracted from the videos, without any 3D supervision. Our experiments show that TracksTo4D can reconstruct a temporal point cloud and camera positions of the underlying video with accuracy comparable to state-of-the-art methods, while drastically reducing runtime by up to 95\%. We further show that TracksTo4D generalizes well to unseen videos of unseen semantic categories at inference time.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2024" aria-labelledby="paper-space-time-diffusion-features-for-zero-shot-text-driven-motion-transfer">
+            <div class="publication-media">
+              <img src="images/diffusion_motion_transfer.gif" alt="Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-space-time-diffusion-features-for-zero-shot-text-driven-motion-transfer"><a href="https://diffusion-motion-transfer.github.io/" target="_blank" rel="noopener noreferrer">Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer</a></h4>
+              <p class="authors">Danah Yatim*, Rafail Fridman*, Omer Bar-Tal, <strong>Yoni Kasten</strong>, Tali Dekel (*equal contribution)</p>
+              <p class="publication-meta"><span>CVPR 2024</span></p>
+              <div class="publication-links">
+                <a href="https://diffusion-motion-transfer.github.io/MotionEditing_arXiv.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://diffusion-motion-transfer.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/diffusion-motion-transfer/diffusion-motion-transfer" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer</span></summary>
+                <p>We present a new method for text-driven motion transfer - synthesizing a video that complies with an input text prompt describing the target objects and scene while maintaining an input video&#x27;s motion and scene layout. Prior methods are confined to transferring motion across two subjects within the same or closely related object categories and are applicable for limited domains (e.g., humans). In this work, we consider a significantly more challenging setting in which the target and source objects differ drastically in shape and fine-grained motion characteristics (e.g., translating a jumping dog into a dolphin). To this end, we leverage a pre-trained and fixed text-to-video diffusion model, which provides us with generative and motion priors. The pillar of our method is a new space-time feature loss derived directly from the model. This loss guides the generation process to preserve the overall motion of the input video while complying with the target object in terms of shape and fine-grained motion traits.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2024" aria-labelledby="paper-training-free-consistent-text-to-image-generation">
+            <div class="publication-media">
+              <img src="images/consistory.jpg" alt="Training-Free Consistent Text-to-Image Generation — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-training-free-consistent-text-to-image-generation"><a href="https://research.nvidia.com/labs/par/consistory/" target="_blank" rel="noopener noreferrer">Training-Free Consistent Text-to-Image Generation</a></h4>
+              <p class="authors">Yoad Tewel, Omri Kaduri, Rinon Gal, <strong>Yoni Kasten</strong>, Lior Wolf, Gal Chechik, Yuval Atzmon</p>
+              <p class="publication-meta"><span>SIGGRAPH 2024</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2402.03286" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://research.nvidia.com/labs/par/consistory/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Training-Free Consistent Text-to-Image Generation</span></summary>
+                <p>Text-to-image models offer a new level of creative flexibility by allowing users to guide the image generation process through natural language. However, using these models to consistently portray the same subject across diverse prompts remains challenging. Existing approaches fine-tune the model to teach it new words that describe specific user-provided subjects or add image conditioning to the model. These methods require lengthy per-subject optimization or large-scale pre-training. Moreover, they struggle to align generated images with text prompts and face difficulties in portraying multiple subjects. Here, we present ConsiStory, a training-free approach that enables consistent subject generation by sharing the internal activations of the pretrained model. We introduce a subject-driven shared attention block and correspondence-based feature injection to promote subject consistency between images. Additionally, we develop strategies to encourage layout diversity while maintaining subject consistency. We compare ConsiStory to a range of baselines, and demonstrate state-of-the-art performance on subject consistency and text alignment, without requiring a single optimization step. Finally, ConsiStory can naturally extend to multi-subject scenarios, and even enable training-free personalization for common objects.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2023">
+          <h3 class="year-heading" id="year-2023">2023</h3>
+          <article class="publication" data-year="2023" aria-labelledby="paper-point-cloud-completion-with-pretrained-text-to-image-diffusion-models">
+            <div class="publication-media">
+              <img src="images/sds_complete.gif" alt="Point-Cloud Completion with Pretrained Text-to-image Diffusion Models — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-point-cloud-completion-with-pretrained-text-to-image-diffusion-models"><a href="https://sds-complete.github.io/" target="_blank" rel="noopener noreferrer">Point-Cloud Completion with Pretrained Text-to-image Diffusion Models</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, Ohad Rahamim, Gal Chechik</p>
+              <p class="publication-meta"><span>NeurIPS 2023</span></p>
+              <div class="publication-links">
+                <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/284afdc2309f9667d2d4fb9290235b0c-Paper-Conference.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://sds-complete.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/NVlabs/sds-complete" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Point-Cloud Completion with Pretrained Text-to-image Diffusion Models</span></summary>
+                <p>Point-cloud data collected in real-world applications are often incomplete, because objects are being observed from specific viewpoints, which only capture one perspective. Data can also be incomplete due to occlusion and low-resolution sampling. Existing approaches to completion rely on training models with datasets of predefined objects to guide the completion of point clouds. Unfortunately, these approaches fail to generalize when tested on objects or real-world setups that are poorly represented in their training set. Here, we leverage recent advances in text-guided 3D shape generation, showing how to use image priors for generating 3D objects. We describe an approach called SDS-Complete that uses a pre-trained text-to-image diffusion model and leverages the text semantics of a given incomplete point cloud of an object, to obtain a complete surface representation. SDS-Complete can complete a variety of objects using test-time optimization without expensive collection of 3D data. We evaluate SDS-Complete on a collection of incomplete scanned objects, captured by real-world depth sensors and LiDAR scanners. We find that it effectively reconstructs objects that are absent from common datasets, reducing Chamfer loss by about 50% on average compared with current methods.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2023" aria-labelledby="paper-scenescape-text-driven-consistent-scene-generation">
+            <div class="publication-media">
+              <img src="images/scene_scape.gif" alt="SceneScape: Text-Driven Consistent Scene Generation — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-scenescape-text-driven-consistent-scene-generation"><a href="https://scenescape.github.io/" target="_blank" rel="noopener noreferrer">SceneScape: Text-Driven Consistent Scene Generation</a></h4>
+              <p class="authors">Rafail Fridman*, Amit Abecasis*, <strong>Yoni Kasten</strong>, Tali Dekel (*equal contribution)</p>
+              <p class="publication-meta"><span>NeurIPS 2023</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2302.01133" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://scenescape.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/RafailFridman/SceneScape" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for SceneScape: Text-Driven Consistent Scene Generation</span></summary>
+                <p>We present a method for text-driven perpetual view generation -- synthesizing long-term videos of various scenes solely from an input text prompt describing the scene and camera poses. We introduce a novel framework that generates such videos in an online fashion by combining the generative power of a pre-trained text-to-image model with the geometric priors learned by a pre-trained monocular depth prediction model. To tackle the pivotal challenge of achieving 3D consistency, i.e., synthesizing videos that depict geometrically-plausible scenes, we deploy an online test-time training to encourage the predicted depth map of the current frame to be geometrically consistent with the synthesized scene. The depth maps are used to construct a unified mesh representation of the scene, which is progressively constructed along the video generation process. In contrast to previous works, which are applicable only to limited domains, our method generates diverse scenes, such as walkthroughs in spaceships, caves, or ice castles.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2023" aria-labelledby="paper-neural-lidar-fields-for-novel-view-synthesis">
+            <div class="publication-media">
+              <img src="images/nfl.gif" alt="Neural LiDAR Fields for Novel View Synthesis — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-neural-lidar-fields-for-novel-view-synthesis"><a href="https://research.nvidia.com/labs/toronto-ai/nfl/" target="_blank" rel="noopener noreferrer">Neural LiDAR Fields for Novel View Synthesis</a></h4>
+              <p class="authors">Shengyu Huang, Zan Gojcic, Zian Wang, Francis Williams, <strong>Yoni Kasten</strong>, Sanja Fidler, Konrad Schindler, Or Litany</p>
+              <p class="publication-meta"><span>ICCV 2023</span></p>
+              <div class="publication-links">
+                <a href="https://nv-tlabs.github.io/nfl/assets/nfl_main.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://research.nvidia.com/labs/toronto-ai/nfl/" target="_blank" rel="noopener noreferrer">Project page</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Neural LiDAR Fields for Novel View Synthesis</span></summary>
+                <p>We present Neural Fields for LiDAR (NFL), a method to optimise a neural field scene representation from LiDAR measurements, with the goal of synthesizing realistic LiDAR scans from novel viewpoints. NFL combines the rendering power of neural fields with a detailed, physically motivated model of the LiDAR sensing process, thus enabling it to accurately reproduce key sensor behaviors like beam divergence, secondary returns, and ray dropping. We evaluate NFL on synthetic and real LiDAR scans and show that it outperforms explicit reconstruct-then-simulate methods as well as other NeRF-style methods on LiDAR novel view synthesis task. Moreover, we show that the improved realism of the synthesized views narrows the domain gap to real scans and translates to better registration and semantic segmentation performance.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2023" aria-labelledby="paper-calm-conditional-adversarial-latent-models-for-directable-virtual-characters">
+            <div class="publication-media">
+              <img src="images/calm.gif" alt="CALM: Conditional Adversarial Latent Models for Directable Virtual Characters — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-calm-conditional-adversarial-latent-models-for-directable-virtual-characters"><a href="https://research.nvidia.com/labs/par/calm/" target="_blank" rel="noopener noreferrer">CALM: Conditional Adversarial Latent Models for Directable Virtual Characters</a></h4>
+              <p class="authors">Chen Tessler, <strong>Yoni Kasten</strong>, Yunrong Guo, Shie Mannor, Gal Chechik, Xue Bin Peng</p>
+              <p class="publication-meta"><span>SIGGRAPH 2023</span></p>
+              <div class="publication-links">
+                <a href="https://research.nvidia.com/labs/par/calm/assets/SIGGRAPH2023_CALM.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://research.nvidia.com/labs/par/calm/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/NVlabs/CALM" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for CALM: Conditional Adversarial Latent Models for Directable Virtual Characters</span></summary>
+                <p>In this work, we present Conditional Adversarial Latent Models (CALM), an approach for generating diverse and directable behaviors for user-controlled interactive virtual characters. Using imitation learning, CALM learns a representation of movement that captures the complexity and diversity of human motion, and enables direct control over character movements. The approach jointly learns a control policy and a motion encoder that reconstructs key characteristics of a given motion without merely replicating it. The results show that CALM learns a semantic motion representation, enabling control over the generated motions and style-conditioning for higher-level task training. Once trained, the character can be controlled using intuitive interfaces, akin to those found in video games.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2023" aria-labelledby="paper-neural-congealing-aligning-images-to-a-joint-semantic-atlas">
+            <div class="publication-media">
+              <img src="images/mug_set_propagated_x4_grid.png" alt="Neural Congealing: Aligning Images to a Joint Semantic Atlas — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-neural-congealing-aligning-images-to-a-joint-semantic-atlas"><a href="https://neural-congealing.github.io/" target="_blank" rel="noopener noreferrer">Neural Congealing: Aligning Images to a Joint Semantic Atlas</a></h4>
+              <p class="authors">Dolev Ofri-Amar, Michal Geyer, <strong>Yoni Kasten</strong>, Tali Dekel</p>
+              <p class="publication-meta"><span>CVPR 2023</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2302.03956.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://neural-congealing.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/dolev104/neural_congealing" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Neural Congealing: Aligning Images to a Joint Semantic Atlas</span></summary>
+                <p>We present Neural Congealing -- a zero-shot self-supervised framework for detecting and jointly aligning semantically-common content across a given set of images. Our approach harnesses the power of pre-trained DINO-ViT features to learn: (i) a joint semantic atlas -- a 2D grid that captures the mode of DINO-ViT features in the input set, and (ii) dense mappings from the unified atlas to each of the input images. We derive a new robust self-supervised framework that optimizes the atlas representation and mappings per image set, requiring only a few real-world images as input without any additional input information (e.g., segmentation masks). Notably, we design our losses and training paradigm to account only for the shared content under severe variations in appearance, pose, background clutter or other distracting objects. We demonstrate results on a plethora of challenging image sets including sets of mixed domains (e.g., aligning images depicting sculpture and artwork of cats), sets depicting related yet different object categories (e.g., dogs and tigers), or domains for which large-scale training data is scarce (e.g., coffee mugs). We thoroughly evaluate our method and show that our test-time optimization approach performs favorably compared to a state-of-the-art method that requires extensive training on large-scale datasets.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2022">
+          <h3 class="year-heading" id="year-2022">2022</h3>
+          <article class="publication" data-year="2022" aria-labelledby="paper-text2live-text-driven-layered-image-and-video-editing">
+            <div class="publication-media">
+              <img src="images/semi_transparent_effects.png" alt="Text2LIVE: Text-Driven Layered Image and Video Editing — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-text2live-text-driven-layered-image-and-video-editing"><a href="https://text2live.github.io/" target="_blank" rel="noopener noreferrer">Text2LIVE: Text-Driven Layered Image and Video Editing</a></h4>
+              <p class="authors">Omer Bar-Tal*, Dolev Ofri-Amar*, Rafail Fridman*, <strong>Yoni Kasten</strong>, Tali Dekel (*equal contribution)</p>
+              <p class="publication-meta"><span>ECCV 2022</span> <span class="award">Oral presentation</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2204.02491.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://text2live.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/omerbt/Text2LIVE" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Text2LIVE: Text-Driven Layered Image and Video Editing</span></summary>
+                <p>We present a method for zero-shot, text-driven appearance manipulation in natural images and videos. Specifically, given an input image or video and a target text prompt, our goal is to edit the appearance of existing objects (e.g., object&#x27;s texture) or augment the scene with new visual effects (e.g., smoke, fire) in a semantically meaningful manner. Our framework trains a generator using an internal dataset of training examples, extracted from a single input (image or video and target text prompt), while leveraging an external pre-trained CLIP model to establish our losses. Rather than directly generating the edited output, our key idea is to generate an edit layer (color+opacity) that is composited over the original input. This allows us to constrain the generation process and maintain high fidelity to the original input via novel text-driven losses that are applied directly to the edit layer. Our method neither relies on a pre-trained generator nor requires user-provided edit masks. Thus, it can perform localized, semantic edits on high-resolution natural images and videos across a variety of objects and scenes.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2022" aria-labelledby="paper-learning-to-estimate-multi-view-pose-from-object-silhouettes">
+            <div class="publication-media">
+              <img src="images/teaser_sil.png" alt="Learning to Estimate Multi-view Pose from Object Silhouettes — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-learning-to-estimate-multi-view-pose-from-object-silhouettes"><a href="https://link.springer.com/chapter/10.1007/978-3-031-25085-9_8" target="_blank" rel="noopener noreferrer">Learning to Estimate Multi-view Pose from Object Silhouettes</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, True Price, David Geraghty, Jan-Michael Frahm</p>
+              <p class="publication-meta"><span>Recovering 6D Object Pose Workshop at ECCV 2022</span></p>
+              <div class="publication-links">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-25085-9_8" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://vimeo.com/showcase/9946695/video/768455972" target="_blank" rel="noopener noreferrer">Presentation (by True Price)</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Learning to Estimate Multi-view Pose from Object Silhouettes</span></summary>
+                <p>While Structure-from-Motion pipelines certainly have their success cases in the task of 3D object reconstruction from multiple images, they still fail on many common objects that lack distinctive texture or have complex appearance qualities. The central problem lies in 6DOF camera pose estimation for the source images: without the ability to obtain a good estimate of the epipolar geometries, all state-of-the-art methods will fail. Although alternative solutions exist for specific objects, general solutions have proved elusive. In this work, we revisit the notion that silhouette cues can provide reasonable constraints on multi-view pose configurations when texture and priors are unavailable. Specifically, we train a neural network to holistically predict camera poses and pose confidences for a given set of input silhouette images, with the hypothesis that the network will be able to learn cues for multi-view relationships in a data-driven way. We show that our network generalizes to unseen synthetic and real object instances under reasonable assumptions about the input pose distribution of the images, and that the estimates are suitable to initialize state-of-the-art 3D reconstruction methods.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2021">
+          <h3 class="year-heading" id="year-2021">2021</h3>
+          <article class="publication" data-year="2021" aria-labelledby="paper-layered-neural-atlases-for-consistent-video-editing">
+            <div class="publication-media">
+              <img src="images/teaser_lucia.gif" alt="Layered Neural Atlases for Consistent Video Editing — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-layered-neural-atlases-for-consistent-video-editing"><a href="https://layered-neural-atlases.github.io/" target="_blank" rel="noopener noreferrer">Layered Neural Atlases for Consistent Video Editing</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, Dolev Ofri, Oliver Wang, Tali Dekel</p>
+              <p class="publication-meta"><span>SIGGRAPH Asia 2021</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2109.11418.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://layered-neural-atlases.github.io/" target="_blank" rel="noopener noreferrer">Project page</a>
+                <a href="https://github.com/ykasten/layered-neural-atlases" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Layered Neural Atlases for Consistent Video Editing</span></summary>
+                <p>We present a method that decomposes, or “unwraps”, an input video into a set of layered 2D atlases, each providing a unified representation of the appearance of an object (or background) over the video. For each pixel in the video, our method estimates its corresponding 2D coordinate in each of the atlases, giving us a consistent parameterization of the video, along with an associated alpha (opacity) value. Importantly, we design our atlases to be interpretable and semantic, which facilitates easy and intuitive editing in the atlas domain, with minimal manual work required. Edits applied to a single 2D atlas (or input video frame) are automatically and consistently mapped back to the original video frames, while preserving occlusions, deformation, and other complex scene effects such as shadows and reflections. Our method employs a coordinate-based Multilayer Perceptron (MLP) representation for mappings, atlases, and alphas, which are jointly optimized on a per-video basis, using a combination of video reconstruction and regularization losses. By operating purely in 2D, our method does not require any prior 3D knowledge about scene geometry or camera poses, and can handle complex dynamic real world videos. We demonstrate various video editing applications, including texture mapping, video style transfer, image-to-video texture transfer, and segmentation/labeling propagation, all automatically produced by editing a single 2D atlas image.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2021" aria-labelledby="paper-volume-rendering-of-neural-implicit-surfaces">
+            <div class="publication-media">
+              <img src="images/volsdf.gif" alt="Volume Rendering of Neural Implicit Surfaces — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-volume-rendering-of-neural-implicit-surfaces"><a href="https://arxiv.org/pdf/2106.12052.pdf" target="_blank" rel="noopener noreferrer">Volume Rendering of Neural Implicit Surfaces</a></h4>
+              <p class="authors">Lior Yariv, Jiatao Gu, <strong>Yoni Kasten</strong>, Yaron Lipman</p>
+              <p class="publication-meta"><span>NeurIPS 2021</span> <span class="award">Oral presentation</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2106.12052.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Volume Rendering of Neural Implicit Surfaces</span></summary>
+                <p>Neural volume rendering became increasingly popular recently due to its success in synthesizing novel views of a scene from a sparse set of input images. So far, the geometry learned by neural volume rendering techniques was modeled using a generic density function. Furthermore, the geometry itself was extracted using an arbitrary level set of the density function leading to a noisy, often low fidelity reconstruction. The goal of this paper is to improve geometry representation and reconstruction in neural volume rendering. We achieve that by modeling the volume density as a function of the geometry. This is in contrast to previous work modeling the geometry as a function of the volume density. In more detail, we define the volume density function as Laplace’s cumulative distribution function (CDF) applied to a signed distance function (SDF) representation. This simple density representation has three benefits: (i) it provides a useful inductive bias to the geometry learned in the neural volume rendering process; (ii) it facilitates a bound on the opacity approximation error, leading to an accurate sampling of the viewing ray. Accurate sampling is important to provide a precise coupling of geometry and radiance; and (iii) it allows efficient unsupervised disentanglement of shape and appearance in volume rendering. Applying this new density representation to challenging scene multiview datasets produced high quality geometry reconstructions, outperforming relevant baselines. Furthermore, switching shape and appearance between scenes is possible due to the disentanglement of the two.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2021" aria-labelledby="paper-deep-permutation-equivariant-structure-from-motion">
+            <div class="publication-media multiple-images">
+              <img src="images/iccv2021.png" alt="Deep Permutation Equivariant Structure from Motion — research preview 1" loading="lazy" decoding="async">
+              <img src="images/four_optimization_results.gif" alt="Deep Permutation Equivariant Structure from Motion — research preview 2" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-deep-permutation-equivariant-structure-from-motion"><a href="https://arxiv.org/pdf/2104.06703.pdf" target="_blank" rel="noopener noreferrer">Deep Permutation Equivariant Structure from Motion</a></h4>
+              <p class="authors">Dror Moran*, Hodaya Koslowsky*, <strong>Yoni Kasten</strong>, Haggai Maron, Meirav Galun, Ronen Basri (*equal contribution)</p>
+              <p class="publication-meta"><span>ICCV 2021</span> <span class="award">Oral presentation</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2104.06703.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/drormoran/Equivariant-SFM" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Deep Permutation Equivariant Structure from Motion</span></summary>
+                <p>Existing deep methods produce highly accurate 3D reconstructions in stereo and multiview stereo settings, i.e., when cameras are both internally and externally calibrated. Nevertheless, the challenge of simultaneous recovery of camera poses and 3D scene structure in multiview settings with deep networks is still outstanding. Inspired by projective factorization for Structure from Motion (SFM) and by deep matrix completion techniques, we propose a neural network architecture that, given a set of point tracks in multiple images of a static scene, recovers both the camera parameters and a (sparse) scene structure by minimizing an unsupervised reprojection loss. Our network architecture is designed to respect the structure of the problem: the sought output is equivariant to permutations of both cameras and scene points. Notably, our method does not require initialization of camera parameters or 3D point locations. We test our architecture in two setups: (1) single scene reconstruction and (2) learning from multiple scenes. Our experiments, conducted on a variety of datasets in both internally calibrated and uncalibrated settings, indicate that our method accurately recovers pose and structure, on par with classical state of the art methods. Additionally, we show that a pre-trained network can be used to reconstruct novel scenes using inexpensive fine-tuning with no loss of accuracy.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2021" aria-labelledby="paper-a-hybrid-global-structure-from-motion-method-for-synchronously-estimating-global-rotations-and-global-translations">
+            <div class="publication-media">
+              <img src="images/hybrid.png" alt="A hybrid global structure from motion method for synchronously estimating global rotations and global translations — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-a-hybrid-global-structure-from-motion-method-for-synchronously-estimating-global-rotations-and-global-translations"><a href="https://www.researchgate.net/profile/Xin-Wang-305/publication/349394725_A_hybrid_global_structure_from_motion_method_for_synchronously_estimating_global_rotations_and_global_translations/links/602e23ba4585158939b080c9/A-hybrid-global-structure-from-motion-method-for-synchronously-estimating-global-rotations-and-global-translations.pdf" target="_blank" rel="noopener noreferrer">A hybrid global structure from motion method for synchronously estimating global rotations and global translations</a></h4>
+              <p class="authors">Xin Wang, Teng Xiao, <strong>Yoni Kasten</strong></p>
+              <p class="publication-meta"><span>ISPRS Journal of Photogrammetry and Remote Sensing 2021</span></p>
+              <div class="publication-links">
+                <a href="https://www.researchgate.net/profile/Xin-Wang-305/publication/349394725_A_hybrid_global_structure_from_motion_method_for_synchronously_estimating_global_rotations_and_global_translations/links/602e23ba4585158939b080c9/A-hybrid-global-structure-from-motion-method-for-synchronously-estimating-global-rotations-and-global-translations.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for A hybrid global structure from motion method for synchronously estimating global rotations and global translations</span></summary>
+                <p>Over the last few decades, the methods of global image orientation, which is also called global SfM, have attracted a lot of attention from researchers, mainly thanks to its advantage of time efficiency. Based on the input of relative orientation results, most conventional global SfM methods employ a two-step strategy consisting of global rotation estimation and global translation estimation. This paper, on the contrary, introduces a hybrid global approach that intends to solve global rotations and translations synchronously, but hierarchically. To improve the robustness and time efficiency, we first propose a novel efficient method that is much faster than the previous approaches for extracting an optimal minimum cover of a connected image triplet set (OMCTS). The OMCTS makes all the available images contained in a minimum number of connected image triplets, as well as all of those selected triplets, satisfy the constraint that the three corresponding relative orientations are as compatible as possible to each other. In order to solve non-collinear triplets in the OMCTS, some fundamental characterizations of essential matrices in the multiple-image setting are used, and image pose parameters are then estimated via averaging the constrained essential matrices. For the collinear triplets, the above approach is invalid and the image pose parameters are then alternatively determined from the relative orientations using the depth of tie points from each individual local spatial intersection. Finally, all image orientations are moved to a common coordinate system by traversing the solved connected triplets using similarity transformations. Compared to the state-of-the-art global SfM methods, the performance and capability of the proposed hybrid approach are thoroughly demonstrated on various public datasets (mainly including ordered and unordered internet images, oblique aerial images, hard and complex datasets, etc.).</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2020">
+          <h3 class="year-heading" id="year-2020">2020</h3>
+          <article class="publication" data-year="2020" aria-labelledby="paper-multiview-neural-surface-reconstruction-by-disentangling-geometry-and-appearance">
+            <div class="publication-media">
+              <img src="images/skull.gif" alt="Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-multiview-neural-surface-reconstruction-by-disentangling-geometry-and-appearance"><a href="https://lioryariv.github.io/idr/" target="_blank" rel="noopener noreferrer">Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance</a></h4>
+              <p class="authors">Lior Yariv, <strong>Yoni Kasten</strong>, Dror Moran, Meirav Galun, Matan Atzmon, Ronen Basri, Yaron Lipman</p>
+              <p class="publication-meta"><span>NeurIPS 2020</span> <span class="award">Spotlight presentation</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2003.09852.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://lioryariv.github.io/idr/" target="_blank" rel="noopener noreferrer">Project Page</a>
+                <a href="https://github.com/lioryariv/idr" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance</span></summary>
+                <p>In this work we address the challenging problem of multiview 3D surface reconstruction. We introduce a neural network architecture that simultaneously learns the unknown geometry, camera parameters, and a neural renderer that approximates the light reflected from the surface towards the camera. The geometry is represented as a zero level-set of a neural network, while the neural renderer, derived from the rendering equation, is capable of (implicitly) modeling a wide set of lighting conditions and materials. We trained our network on real world 2D images of objects with different material properties, lighting conditions, and noisy camera initializations from the DTU MVS dataset. We found our model to produce state of the art 3D surface reconstructions with high fidelity, resolution and detail.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2020" aria-labelledby="paper-on-the-similarity-between-the-laplace-and-neural-tangent-kernels">
+            <div class="publication-media">
+              <img src="images/laplace.png" alt="On the Similarity between the Laplace and Neural Tangent Kernels — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-on-the-similarity-between-the-laplace-and-neural-tangent-kernels"><a href="https://arxiv.org/pdf/2007.01580.pdf" target="_blank" rel="noopener noreferrer">On the Similarity between the Laplace and Neural Tangent Kernels</a></h4>
+              <p class="authors">Amnon Geifman, Abhay Yadav, <strong>Yoni Kasten</strong>, Meirav Galun, David Jacobs, Ronen Basri</p>
+              <p class="publication-meta"><span>NeurIPS 2020</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2007.01580.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for On the Similarity between the Laplace and Neural Tangent Kernels</span></summary>
+                <p>Recent theoretical work has shown that massively overparameterized neural networks are equivalent to kernel regressors that use Neural Tangent Kernels (NTK). Experiments show that these kernel methods perform similarly to real neural networks. Here we show that NTK for fully connected networks is closely related to the standard Laplace kernel. We show theoretically that for normalized data on the hypersphere both kernels have the same eigenfunctions and their eigenvalues decay polynomially at the same rate, implying that their Reproducing Kernel Hilbert Spaces (RKHS) include the same sets of functions. This means that both kernels give rise to classes of functions with the same smoothness properties. The two kernels differ for data off the hypersphere, but experiments indicate that when data is properly normalized these differences are not significant. Finally, we provide experiments on real data comparing NTK and the Laplace kernel, along with a larger class of γ-exponential kernels. We show that these perform almost identically. Our results suggest that much insight about neural networks can be obtained from analysis of the well-known Laplace kernel, which has a simple closed-form.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2020" aria-labelledby="paper-end-to-end-convolutional-neural-network-for-3d-reconstruction-of-knee-bones-from-bi-planar-x-ray-images">
+            <div class="publication-media">
+              <img src="images/miccaiw.png" alt="End-To-End Convolutional Neural Network for 3D Reconstruction of Knee Bones From Bi-Planar X-Ray Images — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-end-to-end-convolutional-neural-network-for-3d-reconstruction-of-knee-bones-from-bi-planar-x-ray-images"><a href="https://arxiv.org/pdf/2004.00871.pdf" target="_blank" rel="noopener noreferrer">End-To-End Convolutional Neural Network for 3D Reconstruction of Knee Bones From Bi-Planar X-Ray Images</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>*, Daniel Doktofsky*, Ilya Kovler* (*equal contribution)</p>
+              <p class="publication-meta"><span>International Workshop on Machine Learning for Medical Image Reconstruction at MICCAI 2020</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2004.00871.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for End-To-End Convolutional Neural Network for 3D Reconstruction of Knee Bones From Bi-Planar X-Ray Images</span></summary>
+                <p>We present an end-to-end Convolutional Neural Network (CNN) approach for 3D reconstruction of knee bones directly from two bi-planar X-ray images. Clinically, capturing the 3D models of the bones is crucial for surgical planning, implant fitting, and postoperative evaluation. X-ray imaging significantly reduces the exposure of patients to ionizing radiation compared to Computer Tomography (CT) imaging, and is much more common and inexpensive compared to Magnetic Resonance Imaging (MRI) scanners. However, retrieving 3D models from such 2D scans is extremely challenging. In contrast to the common approach of statistically modeling the shape of each bone, our deep network learns the distribution of the bones’ shapes directly from the training images. We train our model with both supervised and unsupervised losses using Digitally Reconstructed Radiograph (DRR) images generated from CT scans. To apply our model to X-Ray data, we use style transfer to transform between X-Ray and DRR modalities. As a result, at test time, without further optimization, our solution directly outputs a 3D reconstruction from a pair of bi-planar X-ray images, while preserving geometric constraints. Our results indicate that our deep learning model is very efficient, generalizes well and produces high quality reconstructions.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2020" aria-labelledby="paper-frequency-bias-in-neural-networks-for-input-of-non-uniform-density">
+            <div class="publication-media">
+              <img src="images/icml2020.png" alt="Frequency Bias in Neural Networks for Input of Non-Uniform Density — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-frequency-bias-in-neural-networks-for-input-of-non-uniform-density"><a href="https://arxiv.org/pdf/2003.04560.pdf" target="_blank" rel="noopener noreferrer">Frequency Bias in Neural Networks for Input of Non-Uniform Density</a></h4>
+              <p class="authors">Ronen Basri, Meirav Galun, Amnon Geifman, David Jacobs, <strong>Yoni Kasten</strong>, Shira Kritchman (alphabetical order)</p>
+              <p class="publication-meta"><span>ICML 2020</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2003.04560.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Frequency Bias in Neural Networks for Input of Non-Uniform Density</span></summary>
+                <p>Recent works have partly attributed the generalization ability of over-parameterized neural networks to frequency bias -- networks trained with gradient descent on data drawn from a uniform distribution find a low frequency fit before high frequency ones. As realistic training sets are not drawn from a uniform distribution, we here use the Neural Tangent Kernel (NTK) model to explore the effect of variable density on training dynamics. Our results, which combine analytic and empirical observations, show that when learning a pure harmonic function of frequency κ, convergence at a point <i>x</i> ∈ S<sup>d−1</sup> occurs in time O(κ<sup>d</sup>/p(<i>x</i>)) where p(<i>x</i>) denotes the local density at <i>x</i>. Specifically, for data in S<sup>1</sup> we analytically derive the eigenfunctions of the kernel associated with the NTK for two-layer networks. We further prove convergence results for deep, fully connected networks with respect to the spectral decomposition of the NTK. Our empirical study highlights similarities and differences between deep and shallow networks in this model.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2020" aria-labelledby="paper-averaging-essential-and-fundamental-matrices-in-collinear-camera-settings">
+            <div class="publication-media">
+              <img src="images/cvpr2020.png" alt="Averaging Essential and Fundamental Matrices in Collinear Camera Settings — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-averaging-essential-and-fundamental-matrices-in-collinear-camera-settings"><a href="https://arxiv.org/pdf/1912.00254.pdf" target="_blank" rel="noopener noreferrer">Averaging Essential and Fundamental Matrices in Collinear Camera Settings</a></h4>
+              <p class="authors">Amnon Geifman*, <strong>Yoni Kasten</strong>*, Meirav Galun and Ronen Basri (*equal contribution)</p>
+              <p class="publication-meta"><span>CVPR 2020</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1912.00254.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://www.youtube.com/watch?v=P1stdNCttZY" target="_blank" rel="noopener noreferrer">Video Lecture (Israel Computer Vision Day 2019)</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Averaging Essential and Fundamental Matrices in Collinear Camera Settings</span></summary>
+                <p>Global methods to Structure from Motion have gained popularity in recent years. A significant drawback of global methods is their sensitivity to collinear camera settings. In this paper, we introduce an analysis and algorithms for averaging bifocal tensors (essential or fundamental matrices) when either subsets or all of the camera centers are collinear. We provide a complete spectral characterization of bifocal tensors in collinear scenarios and further propose two averaging algorithms. The first algorithm uses rank constrained minimization to recover camera matrices in fully collinear settings. The second algorithm enriches the set of possibly mixed collinear and non-collinear cameras with additional, "virtual cameras," which are placed in general position, enabling the application of existing averaging methods to the enriched set of bifocal tensors. Our algorithms are shown to achieve state of the art results on various benchmarks that include autonomous car datasets and unordered image collections in both calibrated and uncalibrated settings.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2019">
+          <h3 class="year-heading" id="year-2019">2019</h3>
+          <article class="publication" data-year="2019" aria-labelledby="paper-the-convergence-rate-of-neural-networks-for-learned-functions-of-different-frequencies">
+            <div class="publication-media">
+              <img src="images/nips2019.PNG" alt="The Convergence Rate of Neural Networks for Learned Functions of Different Frequencies — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-the-convergence-rate-of-neural-networks-for-learned-functions-of-different-frequencies"><a href="https://arxiv.org/pdf/1906.00425.pdf" target="_blank" rel="noopener noreferrer">The Convergence Rate of Neural Networks for Learned Functions of Different Frequencies</a></h4>
+              <p class="authors">Ronen Basri, David Jacobs, <strong>Yoni Kasten</strong> and Shira Kritchman (alphabetical order)</p>
+              <p class="publication-meta"><span>NeurIPS 2019</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1906.00425.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/ykasten/Convergence-Rate-NN-Different-Frequencies" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for The Convergence Rate of Neural Networks for Learned Functions of Different Frequencies</span></summary>
+                <p>We study the relationship between the frequency of a function and the speed at which a neural network learns it. We build on recent results that show that the dynamics of overparameterized neural networks trained with gradient descent can be well approximated by a linear system. When normalized training data is uniformly distributed on a hypersphere, the eigenfunctions of this linear system are spherical harmonic functions. We derive the corresponding eigenvalues for each frequency after introducing a bias term in the model. This bias term had been omitted from the linear network model without significantly affecting previous theoretical results. However, we show theoretically and experimentally that a shallow neural network without bias cannot represent or learn simple, low frequency functions with odd frequencies. Our results lead to specific predictions of the time it will take a network to learn functions of varying frequency. These predictions match the empirical behavior of both shallow and deep networks.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2019" aria-labelledby="paper-algebraic-characterization-of-essential-matrices-and-their-averaging-in-multiview-settings">
+            <div class="publication-media">
+              <img src="images/iccv2019.PNG" alt="Algebraic Characterization of Essential Matrices and Their Averaging in Multiview Settings — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-algebraic-characterization-of-essential-matrices-and-their-averaging-in-multiview-settings"><a href="https://arxiv.org/pdf/1904.02663.pdf" target="_blank" rel="noopener noreferrer">Algebraic Characterization of Essential Matrices and Their Averaging in Multiview Settings</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>*, Amnon Geifman*, Meirav Galun and Ronen Basri (*equal contribution)</p>
+              <p class="publication-meta"><span>ICCV 2019</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1904.02663.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/amnonge/Multi-view-Essential-Matrix" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://www.youtube.com/watch?v=P1stdNCttZY" target="_blank" rel="noopener noreferrer">Video Lecture (Israel Computer Vision Day 2019)</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Algebraic Characterization of Essential Matrices and Their Averaging in Multiview Settings</span></summary>
+                <p>Essential matrix averaging, i.e., the task of recovering camera locations and orientations in calibrated, multiview settings, is a first step in global approaches to Euclidean structure from motion. A common approach to essential matrix averaging is to separately solve for camera orientations and subsequently for camera positions. This paper presents a novel approach that solves simultaneously for both camera orientations and positions. We offer a complete characterization of the algebraic conditions that enable a unique Euclidean reconstruction of <i>n</i> cameras from a collection of <math aria-label="n choose 2"><mrow><mo>(</mo><mfrac linethickness="0"><mi>n</mi><mn>2</mn></mfrac><mo>)</mo></mrow></math> essential matrices. We next use these conditions to formulate essential matrix averaging as a constrained optimization problem, allowing us to recover a consistent set of essential matrices given a (possibly partial) set of measured essential matrices computed independently for pairs of images. We finally use the recovered essential matrices to determine the global positions and orientations of the <i>n</i> cameras. We test our method on common SfM datasets, demonstrating high accuracy while maintaining efficiency and robustness, compared to existing methods.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2019" aria-labelledby="paper-gpsfm-global-projective-sfm-using-algebraic-constraints-on-multi-view-fundamental-matrices">
+            <div class="publication-media">
+              <img src="images/cvpr2019.PNG" alt="GPSfM: Global Projective SFM Using Algebraic Constraints on Multi-View Fundamental Matrices — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-gpsfm-global-projective-sfm-using-algebraic-constraints-on-multi-view-fundamental-matrices"><a href="https://arxiv.org/pdf/1812.00426.pdf" target="_blank" rel="noopener noreferrer">GPSfM: Global Projective SFM Using Algebraic Constraints on Multi-View Fundamental Matrices</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>*, Amnon Geifman*, Meirav Galun and Ronen Basri (*equal contribution)</p>
+              <p class="publication-meta"><span>CVPR 2019</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1812.00426.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/amnonge/GPSFM-code" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://www.youtube.com/watch?v=P1stdNCttZY" target="_blank" rel="noopener noreferrer">Video Lecture (Israel Computer Vision Day 2019)</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for GPSfM: Global Projective SFM Using Algebraic Constraints on Multi-View Fundamental Matrices</span></summary>
+                <p>This paper addresses the problem of recovering projective camera matrices from collections of fundamental matrices in multiview settings. We make two main contributions. First, given <math aria-label="n choose 2"><mrow><mo>(</mo><mfrac linethickness="0"><mi>n</mi><mn>2</mn></mfrac><mo>)</mo></mrow></math> fundamental matrices computed for <i>n</i> images, we provide a complete algebraic characterization in the form of conditions that are both necessary and sufficient to enabling the recovery of camera matrices. These conditions are based on arranging the fundamental matrices as blocks in a single matrix, called the <i>n</i>-view fundamental matrix, and characterizing this matrix in terms of the signs of its eigenvalues and rank structures. Secondly, we propose a concrete algorithm for projective structure-from-motion that utilizes this characterization. Given a complete or partial collection of measured fundamental matrices, our method seeks camera matrices that minimize a global algebraic error for the measured fundamental matrices. In contrast to existing methods, our optimization, without any initialization, produces a consistent set of fundamental matrices that corresponds to a unique set of cameras (up to a choice of projective frame). Our experiments indicate that our method achieves state of the art performance in both accuracy and running time.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2019" aria-labelledby="paper-resultant-based-incremental-recovery-of-camera-pose-from-pairwise-matches">
+            <div class="publication-media">
+              <img src="images/wacv2019.PNG" alt="Resultant Based Incremental Recovery of Camera Pose from Pairwise Matches — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-resultant-based-incremental-recovery-of-camera-pose-from-pairwise-matches"><a href="https://arxiv.org/pdf/1901.09364.pdf" target="_blank" rel="noopener noreferrer">Resultant Based Incremental Recovery of Camera Pose from Pairwise Matches</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, Meirav Galun and Ronen Basri</p>
+              <p class="publication-meta"><span>WACV 2019</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1901.09364.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="https://github.com/ykasten/resultantCamPose" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://www.youtube.com/watch?v=B_NzjQFZUN4" target="_blank" rel="noopener noreferrer">Video Lecture (Israel Computer Vision Day 2018)</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Resultant Based Incremental Recovery of Camera Pose from Pairwise Matches</span></summary>
+                <p>Incremental (online) structure from motion pipelines seek to recover the camera matrix associated with an image <i>I</i><sub>n</sub> given <i>n</i>−1 images, <i>I</i><sub>1</sub>,...,<i>I</i><sub>n−1</sub>, whose camera matrices have already been recovered. In this paper, we introduce a novel solution to the six-point online algorithm to recover the exterior parameters associated with <i>I</i><sub>n</sub>. Our algorithm uses just six corresponding pairs of 2D points, extracted each from <i>I</i><sub>n</sub> and from any of the preceding <i>n</i>−1 images, allowing the recovery of the full six degrees of freedom of the <i>n</i>’th camera, and unlike common methods, does not require tracking feature points in three or more images. Our novel solution is based on constructing a Dixon resultant, yielding a solution method that is both efficient and accurate compared to existing solutions. We further use Bernstein's theorem to prove a tight bound on the number of complex solutions. Our experiments demonstrate the utility of our approach.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2018">
+          <h3 class="year-heading" id="year-2018">2018</h3>
+          <article class="publication" data-year="2018" aria-labelledby="paper-two-view-constraints-on-the-epipoles-from-few-correspondences">
+            <div class="publication-media">
+              <img src="images/icip2018.png" alt="Two View Constraints on the Epipoles from Few Correspondences — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-two-view-constraints-on-the-epipoles-from-few-correspondences"><a href="https://arxiv.org/pdf/1810.09496.pdf" target="_blank" rel="noopener noreferrer">Two View Constraints on the Epipoles from Few Correspondences</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, Michael Werman</p>
+              <p class="publication-meta"><span>ICIP 2018</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1810.09496.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+                <a href="buddy_search.html" target="_blank" rel="noopener noreferrer">Buddy Search Web App (developed with Tomer Hacohen)</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Two View Constraints on the Epipoles from Few Correspondences</span></summary>
+                <p>In general it requires at least 7 point correspondences to compute the fundamental matrix between views. We use the cross ratio invariance between corresponding epipolar lines, stemming from epipolar line homography, to derive a simple formulation for the relationship between epipoles and corresponding points. We show how it can be used to reduce the number of required points for the epipolar geometry when some information about the epipoles is available and demonstrate this with a buddy search app.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+        <section class="publication-year" aria-labelledby="year-2016">
+          <h3 class="year-heading" id="year-2016">2016</h3>
+          <article class="publication" data-year="2016" aria-labelledby="paper-fundamental-matrices-from-moving-objects-using-line-motion-barcodes">
+            <div class="publication-media">
+              <img src="images/eccv2016.gif" alt="Fundamental Matrices from Moving Objects Using Line Motion Barcodes — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-fundamental-matrices-from-moving-objects-using-line-motion-barcodes"><a href="https://arxiv.org/pdf/1607.07660.pdf" target="_blank" rel="noopener noreferrer">Fundamental Matrices from Moving Objects Using Line Motion Barcodes</a></h4>
+              <p class="authors"><strong>Yoni Kasten</strong>, Gil Ben-Artzi, Shmuel Peleg and Michael Werman</p>
+              <p class="publication-meta"><span>ECCV 2016</span></p>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/1607.07660.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Fundamental Matrices from Moving Objects Using Line Motion Barcodes</span></summary>
+                <p>Computing the epipolar geometry between cameras with very different viewpoints is often very difficult. The appearance of objects can vary greatly, and it is difficult to find corresponding feature points. Prior methods searched for corresponding epipolar lines using points on the convex hull of the silhouette of a single moving object. These methods fail when the scene includes multiple moving objects. This paper extends previous work to scenes having multiple moving objects by using the “Motion Barcodes”, a temporal signature of lines. Corresponding epipolar lines have similar motion barcodes, and candidate pairs of corresponding epipolar lines are found by the similarity of their motion barcodes. As in previous methods we assume that cameras are relatively stationary and that moving objects have already been extracted using background subtraction.</p>
+              </details>
+            </div>
+          </article>
+          <article class="publication" data-year="2016" aria-labelledby="paper-camera-calibration-from-dynamic-silhouettes-using-motion-barcodes">
+            <div class="publication-media">
+              <img src="images/cvpr2016.png" alt="Camera Calibration From Dynamic Silhouettes Using Motion Barcodes — research preview" loading="lazy" decoding="async">
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title" id="paper-camera-calibration-from-dynamic-silhouettes-using-motion-barcodes"><a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Ben-Artzi_Camera_Calibration_From_CVPR_2016_paper.pdf" target="_blank" rel="noopener noreferrer">Camera Calibration From Dynamic Silhouettes Using Motion Barcodes</a></h4>
+              <p class="authors">Gil Ben-Artzi, <strong>Yoni Kasten</strong>, Shmuel Peleg and Michael Werman</p>
+              <p class="publication-meta"><span>CVPR 2016</span></p>
+              <div class="publication-links">
+                <a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Ben-Artzi_Camera_Calibration_From_CVPR_2016_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a>
+              </div>
+              <details class="abstract">
+                <summary>Abstract<span class="visually-hidden"> for Camera Calibration From Dynamic Silhouettes Using Motion Barcodes</span></summary>
+                <p>Computing the epipolar geometry between cameras with very different viewpoints is often problematic as matching points are hard to find. In these cases, it has been proposed to use information from dynamic objects in the scene for suggesting point and line correspondences. We propose a speed up of about two orders of magnitude, as well as an increase in robustness and accuracy, to methods computing epipolar geometry from dynamic silhouettes based on a new temporal signature, motion barcode for lines. This is a binary temporal sequence for lines, indicating for each frame the existence of at least one foreground pixel on that line. The motion barcodes of two corresponding epipolar lines are very similar so the search for corresponding epipolar lines can be limited to lines having similar barcodes leading to increased speed, accuracy, and robustness in computing the epipolar geometry.</p>
+              </details>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="teaching-section" id="teaching" aria-labelledby="teaching-heading">
+      <h2 class="section-heading" id="teaching-heading">Teaching</h2>
+      <ul class="teaching-list">
+        <li><span class="teaching-date">2021 / 2020<span>Spring</span></span><div class="teaching-course"><strong>Multiple View Geometry for Computer Vision Applications</strong><span>Weizmann Institute of Science · Lecturer</span></div></li>
+        <li><span class="teaching-date">2018<span>Winter</span></span><div class="teaching-course"><strong>Introduction to Computer Vision</strong><span>Weizmann Institute of Science · Teaching assistant</span></div></li>
+        <li><span class="teaching-date">2016 / 2015<span>Winter</span></span><div class="teaching-course"><strong>Image Processing</strong><span>Hebrew University of Jerusalem · Teaching assistant</span></div></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Yoni Kasten</span>
+      <div class="footer-links"><a href="mailto:yonikasten@gmail.com">Email</a><a href="#templatemo_about">Back to top</a></div>
     </div>
-</section><!-- end of templatemo_about -->
+  </footer>
 
-
-
-
-<section id="templatemo_publications">
-
- <div class="container">
-<hr>
-        <div class="row">
-            <h1>Publications</h1>
-        </div>
-       
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/tritex.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>TriTex: Learning Texture from a Single Mesh via Triplane Semantic Features</h2>
-                <p>
-                   Dana Cohen-Bar, Daniel Cohen-Or, Gal Chechik, <b> Yoni Kasten </b>  <br>
-                  <i> CVPR 2025 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="As 3D content creation continues to grow, transferring semantic textures between 3D meshes remains a significant challenge in computer graphics. While recent methods leverage text-to-image diffusion models for texturing, they often struggle to preserve the appearance of the source texture during texture transfer. We present TriTex, a novel approach that learns a volumetric texture field from a single textured mesh by mapping semantic features to surface colors. Using an efficient triplane-based architecture, our method enables semantic-aware texture transfer to a novel target mesh. Despite training on just one example, it generalizes effectively to diverse shapes within the same category. Extensive evaluation on our newly created benchmark dataset shows that TriTex achieves superior texture transfer quality and fast inference times compared to existing methods. Our approach advances single-example texture transfer, providing a practical solution for maintaining visual coherence across related 3D models in applications like game development and simulation."> Abstract</a>
-                <a href="https://arxiv.org/pdf/2503.16630" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://danacohen95.github.io/TriTex/" class="btn btn-default" target="_blank">Project page </a>
-              
-            </div>
-        
-     </div><!-- end of row -->
-
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/resfm.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>RESFM: Robust Equivariant Multiview Structure
-from Motion</h2>
-                <p>
-                   Fadi Khatib, <b> Yoni Kasten </b> , Dror Moran, Meirav Galun, Ronen Basri <br>
-                  <i> ICLR 2025 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="Multiview Structure from Motion is a fundamental and challenging computer vision problem. A recent deep-based approach was proposed utilizing matrix equivariant architectures for the simultaneous recovery of camera pose and 3D scene structure from large image collections. This work however made the unrealistic assumption that the point tracks given as input are clean of outliers. Here we propose an architecture suited to dealing with outliers by adding an inlier/outlier classifying module that respects the model equivariance and by adding a robust bundle adjustment step. Experiments demonstrate that our method can be successfully applied in realistic settings that include large image collections and point tracks extracted with common heuristics and include many outliers."> Abstract</a>
-                <a href="https://arxiv.org/pdf/2404.14280" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://robust-equivariant-sfm.github.io/" class="btn btn-default" target="_blank">Project page </a>
-              
-            </div>
-        
-     </div><!-- end of row -->
-
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/tracks_to_4d.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Fast Encoder-Based 3D from Casual Videos via Point Track Processing</h2>
-                <p>
-                    <b> Yoni Kasten </b> , Wuyue Lu, Haggai Maron <br>
-                  <i> NeurIPS 2024 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="This paper addresses the long-standing challenge of reconstructing 3D structures from videos with dynamic content. Current approaches to this problem were not designed to operate on casual videos recorded by standard cameras or require a long optimization time. Aiming to significantly improve the efficiency of previous approaches, we present TracksTo4D, a learning-based approach that enables inferring 3D structure and camera positions from dynamic content originating from casual videos using a single efficient feed-forward pass. To achieve this, we propose operating directly over 2D point tracks as input and designing an architecture tailored for processing 2D point tracks. Our proposed architecture is designed with two key principles in mind: (1) it takes into account the inherent symmetries present in the input point tracks data, and (2) it assumes that the movement patterns can be effectively represented using a low-rank approximation. TracksTo4D is trained in an unsupervised way on a dataset of casual videos utilizing only the 2D point tracks extracted from the videos, without any 3D supervision. Our experiments show that TracksTo4D can reconstruct a temporal point cloud and camera positions of the underlying video with accuracy comparable to state-of-the-art methods, while drastically reducing runtime by up to 95\%. We further show that TracksTo4D generalizes well to unseen videos of unseen semantic categories at inference time. "> Abstract</a>
-                <a href="https://arxiv.org/pdf/2404.07097" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://tracks-to-4d.github.io/" class="btn btn-default" target="_blank">Project page </a>
-              
-            </div>
-        
-     </div><!-- end of row -->
-
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/diffusion_motion_transfer.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer</h2>
-                <p>
-                    Danah Yatim*, Rafail Fridman*, Omer Bar-Tal, <b> Yoni Kasten </b> , Tali Dekel (*equal contribution)<br>
-                  <i> CVPR 2024 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="We present a new method for text-driven motion transfer - synthesizing a video that complies with an input text prompt describing the target objects and scene while maintaining an input video's motion and scene layout. Prior methods are confined to transferring motion across two subjects within the same or closely related object categories and are applicable for limited domains (e.g., humans). In this work, we consider a significantly more challenging setting in which the target and source objects differ drastically in shape and fine-grained motion characteristics (e.g., translating a jumping dog into a dolphin). To this end, we leverage a pre-trained and fixed text-to-video diffusion model, which provides us with generative and motion priors. The pillar of our method is a new space-time feature loss derived directly from the model. This loss guides the generation process to preserve the overall motion of the input video while complying with the target object in terms of shape and fine-grained motion traits. "> Abstract</a>
-                <a href="https://diffusion-motion-transfer.github.io/MotionEditing_arXiv.pdf" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://diffusion-motion-transfer.github.io/" class="btn btn-default" target="_blank">Project page </a>
-                <a href="https://github.com/diffusion-motion-transfer/diffusion-motion-transfer" class="btn btn-default" target="_blank">Code </a>
-
-            </div>
-        
-     </div><!-- end of row -->
-
-
-
-
-
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/consistory.jpg"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Training-Free Consistent Text-to-Image Generation</h2>
-                <p>
-                    Yoad Tewel, Omri Kaduri, Rinon Gal, <b> Yoni Kasten </b> , Lior Wolf, Gal Chechik, Yuval Atzmon<br>
-                  <i> SIGGRAPH 2024 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="Text-to-image models offer a new level of creative flexibility by allowing users to guide the image generation process through natural language. However, using these models to consistently portray the same subject across diverse prompts remains challenging. Existing approaches fine-tune the model to teach it new words that describe specific user-provided subjects or add image conditioning to the model. These methods require lengthy per-subject optimization or large-scale pre-training. Moreover, they struggle to align generated images with text prompts and face difficulties in portraying multiple subjects. Here, we present ConsiStory, a training-free approach that enables consistent subject generation by sharing the internal activations of the pretrained model. We introduce a subject-driven shared attention block and correspondence-based feature injection to promote subject consistency between images. Additionally, we develop strategies to encourage layout diversity while maintaining subject consistency. We compare ConsiStory to a range of baselines, and demonstrate state-of-the-art performance on subject consistency and text alignment, without requiring a single optimization step. Finally, ConsiStory can naturally extend to multi-subject scenarios, and even enable training-free personalization for common objects. "> Abstract</a>
-                <a href="https://arxiv.org/pdf/2402.03286" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://research.nvidia.com/labs/par/consistory/" class="btn btn-default" target="_blank">Project page </a>
-                
-
-            </div>
-        
-     </div><!-- end of row -->
-
-
-
-
-
-
-
-
-     <div class="row" id="templatemo_publications_LargeScaleBD">
-        <div class="col-md-1"></div>
-        <div class="col-md-5 col-sm-7 col-xs-24">
-            <img src="images/sds_complete.gif"  alt="">
-
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-16">
-            <h2>Point-Cloud Completion with Pretrained Text-to-image Diffusion Models</h2>
-            <p>
-               <b> Yoni Kasten </b> , Ohad Rahamim, Gal Chechik<br>
-              <i> NeurIPS 2023 </i>
-            </p>
-            <a class="btn btn-default abstract" ptitle="Point-cloud data collected in real-world applications are often incomplete, because objects are being observed from specific viewpoints, which only capture one perspective. Data can also be incomplete due to occlusion and low-resolution sampling. Existing approaches to completion rely on training models with datasets of predefined objects to guide the completion of point clouds. Unfortunately, these approaches fail to generalize when tested on objects or real-world setups that are poorly represented in their training set. Here, we leverage recent advances in text-guided 3D shape generation, showing how to use image priors for generating 3D objects. We describe an approach called SDS-Complete that uses a pre-trained text-to-image diffusion model and leverages the text semantics of a given incomplete point cloud of an object, to obtain a complete surface representation. SDS-Complete can complete a variety of objects using test-time optimization without expensive collection of 3D data. We evaluate SDS-Complete on a collection of incomplete scanned objects, captured by real-world depth sensors and LiDAR scanners. We find that it effectively reconstructs objects that are absent from common datasets, reducing Chamfer loss by about 50% on average compared with current methods.         "> Abstract</a>
-            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/284afdc2309f9667d2d4fb9290235b0c-Paper-Conference.pdf" class="btn btn-default" target="_blank">Paper </a>
-            <a href="https://sds-complete.github.io/" class="btn btn-default" target="_blank">Project page </a>
-            <a href="https://github.com/NVlabs/sds-complete" class="btn btn-default" target="_blank">Code </a>
-
-        </div>
-    
-    </div><!-- end of row -->
-
-
-
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/scene_scape.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>SceneScape: Text-Driven Consistent Scene Generation</h2>
-                <p>
-                    Rafail Fridman*,  Amit Abecasis*, <b> Yoni Kasten </b> , Tali Dekel (*equal contribution)<br>
-                  <i> NeurIPS 2023 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="We present a method for text-driven perpetual view generation -- synthesizing long-term videos of various scenes solely from an input text prompt describing the scene and camera poses. We introduce a novel framework that generates such videos in an online fashion by combining the generative power of a pre-trained text-to-image model with the geometric priors learned by a pre-trained monocular depth prediction model. To tackle the pivotal challenge of achieving 3D consistency, i.e., synthesizing videos that depict geometrically-plausible scenes, we deploy an online test-time training to encourage the predicted depth map of the current frame to be geometrically consistent with the synthesized scene. The depth maps are used to construct a unified mesh representation of the scene, which is progressively constructed along the video generation process. In contrast to previous works, which are applicable only to limited domains, our method generates diverse scenes, such as walkthroughs in spaceships, caves, or ice castles.                "> Abstract</a>
-                <a href="https://arxiv.org/pdf/2302.01133" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://scenescape.github.io/" class="btn btn-default" target="_blank">Project page </a>
-                <a href="https://github.com/RafailFridman/SceneScape" class="btn btn-default" target="_blank">Code </a>
-
-            </div>
-        
-     </div><!-- end of row -->
-
-        
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/nfl.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Neural LiDAR Fields for Novel View Synthesis</h2>
-                <p>
-                    Shengyu Huang,  Zan Gojcic, Zian Wang, Francis Williams, <b> Yoni Kasten </b> , Sanja Fidler, Konrad Schindler, Or Litany                 <br>
-                  <i> ICCV 2023 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="We present Neural Fields for LiDAR (NFL), a method to optimise a neural field scene representation from LiDAR measurements, with the goal of synthesizing realistic LiDAR scans from novel viewpoints. NFL combines the rendering power of neural fields with a detailed, physically motivated model of the LiDAR sensing process, thus enabling it to accurately reproduce key sensor behaviors like beam divergence, secondary returns, and ray dropping. We evaluate NFL on synthetic and real LiDAR scans and show that it outperforms explicit reconstruct-then-simulate methods as well as other NeRF-style methods on LiDAR novel view synthesis task. Moreover, we show that the improved realism of the synthesized views narrows the domain gap to real scans and translates to better registration and semantic segmentation performance.   "> Abstract</a>
-                <a href="https://nv-tlabs.github.io/nfl/assets/nfl_main.pdf" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://research.nvidia.com/labs/toronto-ai/nfl/" class="btn btn-default" target="_blank">Project page </a>
-                  
-
-            </div>
-        
-     </div><!-- end of row -->
-
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/calm.gif"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>CALM: Conditional Adversarial Latent Models for Directable Virtual Characters</h2>
-                <p>
-                    Chen Tessler, <b> Yoni Kasten </b> , Yunrong Guo, Shie Mannor, Gal Chechik, Xue Bin Peng <br>
-                  <i> SIGGRAPH 2023 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="In this work, we present Conditional Adversarial Latent Models (CALM), an approach for generating diverse and directable behaviors for user-controlled interactive virtual characters. Using imitation learning, CALM learns a representation of movement that captures the complexity and diversity of human motion, and enables direct control over character movements. The approach jointly learns a control policy and a motion encoder that reconstructs key characteristics of a given motion without merely replicating it. The results show that CALM learns a semantic motion representation, enabling control over the generated motions and style-conditioning for higher-level task training. Once trained, the character can be controlled using intuitive interfaces, akin to those found in video games.     "> Abstract</a>
-                <a href="https://research.nvidia.com/labs/par/calm/assets/SIGGRAPH2023_CALM.pdf" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://research.nvidia.com/labs/par/calm/" class="btn btn-default" target="_blank">Project page </a>
-                   <a href="https://github.com/NVlabs/CALM" class="btn btn-default" target="_blank">Code </a>
-
-            </div>
-        
-     </div><!-- end of row -->
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/mug_set_propagated_x4_grid.png"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Neural Congealing: Aligning Images to a Joint Semantic Atlas</h2>
-                <p>
-                    Dolev Ofri-Amar, Michal Geyer, <b> Yoni Kasten </b> , Tali Dekel <br>
-                  <i> CVPR 2023 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="We present Neural Congealing -- a zero-shot self-supervised framework for detecting and jointly aligning semantically-common content across a given set of images. Our approach harnesses the power of pre-trained DINO-ViT features to learn: (i) a joint semantic atlas -- a 2D grid that captures the mode of DINO-ViT features in the input set, and (ii) dense mappings from the unified atlas to each of the input images. We derive a new robust self-supervised framework that optimizes the atlas representation and mappings per image set, requiring only a few real-world images as input without any additional input information (e.g., segmentation masks). Notably, we design our losses and training paradigm to account only for the shared content under severe variations in appearance, pose, background clutter or other distracting objects. We demonstrate results on a plethora of challenging image sets including sets of mixed domains (e.g., aligning images depicting sculpture and artwork of cats), sets depicting related yet different object categories (e.g., dogs and tigers), or domains for which large-scale training data is scarce (e.g., coffee mugs). We thoroughly evaluate our method and show that our test-time optimization approach performs favorably compared to a state-of-the-art method that requires extensive training on large-scale datasets.     "> Abstract</a>
-                <a href="https://arxiv.org/pdf/2302.03956.pdf" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://neural-congealing.github.io/" class="btn btn-default" target="_blank">Project page </a>
-                   <a href="https://github.com/dolev104/neural_congealing" class="btn btn-default" target="_blank">Code </a>
-
-            </div>
-        
-     </div><!-- end of row -->
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/semi_transparent_effects.png"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Text2LIVE: Text-Driven Layered Image and Video Editing</h2>
-                <p>
-                    Omer Bar-Tal*, Dolev Ofri-Amar*, Rafail Fridman*, <b> Yoni Kasten </b> , Tali Dekel (*equal contribution)<br>
-                  <i> ECCV 2022 </i>
-                </p>
-                <p style="color:red;"> Oral presentation </p>
-                <a class="btn btn-default abstract" ptitle="We present a method for zero-shot, text-driven appearance manipulation in natural images and videos. Specifically, given an input image or video and a target text prompt, our goal is to edit the appearance of existing objects (e.g., object's texture) or augment the scene with new visual effects (e.g., smoke, fire) in a semantically meaningful manner. Our framework trains a generator using an internal dataset of training examples, extracted from a single input (image or video and target text prompt), while leveraging an external pre-trained CLIP model to establish our losses. Rather than directly generating the edited output, our key idea is to generate an edit layer (color+opacity) that is composited over the original input. This allows us to constrain the generation process and maintain high fidelity to the original input via novel text-driven losses that are applied directly to the edit layer. Our method neither relies on a pre-trained generator nor requires user-provided edit masks. Thus, it can perform localized, semantic edits on high-resolution natural images and videos across a variety of objects and scenes.   "> Abstract</a>
-                <a href="https://arxiv.org/pdf/2204.02491.pdf" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://text2live.github.io/" class="btn btn-default" target="_blank">Project page </a>
-                   <a href="https://github.com/omerbt/Text2LIVE" class="btn btn-default" target="_blank">Code </a>
-
-            </div>
-
-     </div><!-- end of row -->
-
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="images/teaser_sil.png"  alt="">
-
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Learning to Estimate Multi-view Pose from Object Silhouettes</h2>
-                <p>
-                  <b> Yoni Kasten </b> , True Price, David Geraghty, Jan-Michael Frahm <br>
-                  <i> Recovering 6D Object Pose Workshop at ECCV 2022 </i>
-                </p>
-                <a class="btn btn-default abstract" ptitle="While Structure-from-Motion pipelines certainly have their success cases in the task of 3D object reconstruction from multiple images, they still fail on many common objects that lack distinctive texture or have complex appearance qualities. The central problem lies in 6DOF camera pose estimation for the source images: without the ability to obtain a good estimate of the epipolar geometries, all state-of-the-art methods will fail. Although alternative solutions exist for specific objects, general solutions have proved elusive. In this work, we revisit the notion that silhouette cues can provide reasonable constraints on multi-view pose configurations when texture and priors are unavailable. Specifically, we train a neural network to holistically predict camera poses and pose confidences for a given set of input silhouette images, with the hypothesis that the network will be able to learn cues for multi-view relationships in a data-driven way. We show that our network generalizes to unseen synthetic and real object instances under reasonable assumptions about the input pose distribution of the images, and that the estimates are suitable to initialize state-of-the-art 3D reconstruction methods."> Abstract</a>
-                <a href="https://link.springer.com/chapter/10.1007/978-3-031-25085-9_8" class="btn btn-default" target="_blank">Paper </a>
-                <a href="https://vimeo.com/showcase/9946695/video/768455972" class="btn btn-default" target="_blank">Presentation (by True Price) </a>
-              
-
-            </div>
-
-     </div><!-- end of row -->
-
-
-       <div class="row" id="templatemo_publications_LargeScaleBD">
-             <div class="col-md-1"></div>
-             <div class="col-md-5 col-sm-7 col-xs-24">
-                 <img src="images/teaser_lucia.gif"  alt="">
-
-             </div>
-             <div class="col-md-1"></div>
-             <div class="col-md-16">
-                 <h2>Layered Neural Atlases for Consistent Video Editing</h2>
-                 <p>
-                   <b> Yoni Kasten </b> , Dolev Ofri, Oliver Wang, Tali Dekel<br>
-                   <i> SIGGRAPH Asia 2021 </i>
-                 </p>
-                 <a class="btn btn-default abstract" ptitle="We present a method that decomposes, and “unwraps”, an input video into a set of layered 2D atlases, each providing a unified representation of the appearance of an object (or background) over the video. For each pixel in the video, our method estimates its corresponding 2D coordinate in each of the atlases, giving us a consistent parameterization of the video, along with an associated alpha (opacity) value. Importantly, we design our atlases to be interpretable and semantic, which facilitates easy and intuitive editing in the atlas domain, with minimal manual work required. Edits applied to a single 2D atlas (or input video frame) are automatically and consistently mapped back to the original video frames, while preserving occlusions, deformation, and other complex scene effects such as shadows and reflections. Our method employs a coordinate-based Multilayer Perceptron (MLP) representation for mappings, atlases, and alphas, which are jointly optimized on a per-video basis, using a combination of video reconstruction and regularization losses. By operating purely in 2D, our method does not require any prior 3D knowledge about scene geometry or camera poses, and can handle complex dynamic real world videos. We demonstrate various video editing applications, including texture mapping, video style transfer, image-to-video texture transfer, and segmentation/labeling propagation, all automatically produced by editing a single 2D atlas image. "> Abstract</a>
-                 <a href="https://arxiv.org/pdf/2109.11418.pdf" class="btn btn-default" target="_blank">Paper </a>
-                 <a href="https://layered-neural-atlases.github.io/" class="btn btn-default" target="_blank">Project page </a>
-                    <a href="https://github.com/ykasten/layered-neural-atlases" class="btn btn-default" target="_blank">Code </a>
-
-             </div>
-
-      </div><!-- end of row -->
-
-
-
-  <div class="row" id="templatemo_publications_LargeScaleBD">
-             <div class="col-md-1"></div>
-             <div class="col-md-5 col-sm-7 col-xs-24">
-                 <img src="images/volsdf.gif"  alt="">
-
-             </div>
-             <div class="col-md-1"></div>
-             <div class="col-md-16">
-                 <h2>Volume Rendering of Neural Implicit Surfaces</h2>
-                 <p>
-                   Lior Yariv, Jiatao Gu, <b> Yoni Kasten </b>, Yaron Lipman<br>
-                   <i> NeurIPS 2021  </i> <br>
-                   <p style="color:red;"> Oral presentation </p>
-                 </p>
-                 <a class="btn btn-default abstract" ptitle="Neural volume rendering became increasingly popular recently due to its success in synthesizing novel views of a scene from a sparse set of input images. So far, the geometry learned by neural volume rendering techniques was modeled using a generic density function. Furthermore, the geometry itself was extracted using an arbitrary level set of the density function leading to a noisy, often low fidelity reconstruction. The goal of this paper is to improve geometry representation and reconstruction in neural volume rendering. We achieve that by modeling the volume density as a function of the geometry. This is in contrast to previous work modeling the geometry as a function of the volume density. In more detail, we define the volume density function as Laplace’s cumulative distribution function (CDF) applied to a signed distance function (SDF) representation. This simple density representation has three benefits: (i) it provides a useful inductive bias to the geometry learned in the neural volume rendering process; (ii) it facilitates a bound on the opacity approximation error, leading to an accurate sampling of the viewing ray. Accurate sampling is important to provide a precise coupling of geometry and radiance; and (iii) it allows efficient unsupervised disentanglement of shape and appearance in volume rendering. Applying this new density representation to challenging scene multiview datasets produced high quality geometry reconstructions, outperforming relevant baselines. Furthermore, switching shape and appearance between scenes is possible due to the disentanglement of the two."> Abstract</a>
-                 <a href="https://arxiv.org/pdf/2106.12052.pdf" class="btn btn-default" target="_blank">Paper </a>
-             </div>
-
-      </div><!-- end of row -->
-
-  <div class="row" id="templatemo_publications_LargeScaleBD">
-             <div class="col-md-1"></div>
-             <div class="col-md-5 col-sm-7 col-xs-24">
-                 <img src="images/iccv2021.png"  alt=""><br>
-                 <img src="images/four_optimization_results.gif"  alt="">
-
-             </div>
-             <div class="col-md-1"></div>
-             <div class="col-md-16">
-                 <h2>Deep Permutation Equivariant Structure from Motion</h2>
-                 <p>
-                   Dror Moran*, Hodaya Koslowsky*, <b> Yoni Kasten </b> , Haggai Maron, Meirav Galun, Ronen Basri (*equal contribution)<br>
-                   <i> ICCV 2021   </i> <br>
-                   <p style="color:red;"> Oral presentation</p>
-                 </p>
-                 <a class="btn btn-default abstract" ptitle="Existing deep methods produce highly accurate 3D reconstructions in stereo and multiview stereo settings, i.e., when cameras are both internally and externally calibrated. Nevertheless, the challenge of simultaneous recovery of camera poses and 3D scene structure in multiview settings with deep networks is still outstanding. Inspired by projective factorization for Structure from Motion (SFM) and by deep matrix completion techniques, we propose a neural network architecture that, given a set of point tracks in multiple images of a static scene, recovers both the camera parameters and a (sparse) scene structure by minimizing an unsupervised reprojection loss. Our network architecture is designed to respect the structure of the problem: the sought output is equivariant to permutations of both cameras and scene points. Notably, our method does not require initialization of camera parameters or 3D point locations. We test our architecture in two setups: (1) single scene reconstruction and (2) learning from multiple scenes. Our experiments, conducted on a variety of datasets in both internally calibrated and uncalibrated settings, indicate that our method accurately recovers pose and structure, on par with classical state of the art methods. Additionally, we show that a pre-trained network can be used to reconstruct novel scenes using inexpensive fine-tuning with no loss of accuracy."> Abstract</a>
-                 <a href="https://arxiv.org/pdf/2104.06703.pdf" class="btn btn-default" target="_blank">Paper </a><a href="https://github.com/drormoran/Equivariant-SFM" class="btn btn-default" target="_blank">Code</a>
-             </div>
-
-      </div><!-- end of row -->
-
-
-
-      <div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/hybrid.png" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>A hybrid global structure from motion method for synchronously
-estimating global rotations and global translations</h2>
-<p>Xin Wang, Teng Xiao, <b> Yoni Kasten </b> <p>
-<tab1>  </tab1>
-<p><i>ISPRS Journal of Photogrammetry and Remote Sensing 2021</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="A hybrid global structure from motion method for synchronously estimating global rotations and global translations"
-abstract="Over the last few decades, the methods of global image orientation, which is also called global SfM, have attracted a lot of attention from researchers, mainly thanks to its advantage of time efficiency. Based on the input of relative orientation results, most conventional global SfM methods employ a two-step strategy consisting of global rotation estimation and global translation estimation. This paper, on the contrary, introduces a hybrid global approach that intends to solve global rotations and translations synchronously, but hierarchically. To improve the robustness and time efficiency, we first propose a novel efficient method that is much faster than the previous approaches for extracting an optimal minimum cover of a connected image triplet set (OMCTS). The OMCTS makes all the available images contained in a minimum number of connected image triplets, as well as all of those selected triplets, satisfy the constraint that the three corresponding relative orientations are as compatible as possible to each other. In order to solve non-collinear triplets in the OMCTS, some fundamental characterizations of essential matrices in the multiple-image setting are used, and image pose parameters are then estimated via averaging the constrained essential matrices. For the collinear triplets, the above approach is invalid and the image pose parameters are then alternatively determined from the relative orientations using the depth of tie points from each individual local spatial intersection. Finally, all image orientations are moved to a common coordinate system by traversing the solved connected triplets using similarity transformations. Compared to the state-of-the-art global SfM methods, the performance and capability of the proposed hybrid approach are thoroughly demonstrated on various public datasets (mainly including ordered and unordered internet images, oblique aerial images, hard and complex datasets, etc.). ">Abstract</a>
-<a href="https://www.researchgate.net/profile/Xin-Wang-305/publication/349394725_A_hybrid_global_structure_from_motion_method_for_synchronously_estimating_global_rotations_and_global_translations/links/602e23ba4585158939b080c9/A-hybrid-global-structure-from-motion-method-for-synchronously-estimating-global-rotations-and-global-translations.pdf" target="_blank" class="btn btn-default abstract" ptitle="A hybrid global structure from motion method for synchronously estimating global rotations and global translations">Paper</a>
-
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-
-
-
-  <div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/skull.gif" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance</h2>
-<p>Lior Yariv, <b> Yoni Kasten </b> , Dror Moran, Meirav Galun, Matan Atzmon, Ronen Basri, Yaron Lipman<p>
-<tab1>  </tab1>
-<p><i>NeurIPS 2020</i></p>
-</p>
-     <p style="color:red;"> Spotlight presentation</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance"
-abstract="In this work we address the challenging problem of multiview 3D surface reconstruction. We introduce a neural network architecture that simultaneously learns the unknown geometry, camera parameters, and a neural renderer that approximates the light reflected from the surface towards the camera. The geometry is represented as a zero level-set of a neural network, while the neural renderer, derived from the rendering equation, is capable of (implicitly) modeling a wide set of lighting conditions and materials. We trained our network on real world 2D images of objects with different material properties, lighting conditions, and noisy camera initializations from the DTU MVS dataset. We found our model to produce state of the art 3D surface reconstructions with high fidelity, resolution and detail.">Abstract</a>
-<a href="https://arxiv.org/pdf/2003.09852.pdf" target="_blank" class="btn btn-default abstract" ptitle="Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance">Paper</a>
-<a href="https://lioryariv.github.io/idr/" target="_blank" class="btn btn-default abstract" ptitle="Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance">Project Page</a>
-<a href="https://github.com/lioryariv/idr" target="_blank" class="btn btn-default abstract" ptitle="Multiview Neural Surface Reconstruction by Disentangling Geometry and Appearance">Code</a>
-
-
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/laplace.png" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>On the Similarity between the Laplace and Neural Tangent Kernels</h2>
-<p>Amnon Geifman, Abhay Yadav, <b> Yoni Kasten </b> , Meirav Galun, David Jacobs, Ronen Basri<p>
-<tab1>  </tab1>
-<p><i> NeurIPS 2020</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="On the Similarity between the Laplace and Neural Tangent Kernels"
-abstract="Recent theoretical work has shown that massively overparameterized neural networks are equivalent to kernel regressors that use Neural Tangent Kernels(NTK). Experiments show that these kernel methods perform similarly to real neural networks. Here we show that NTK for fully connected networks is closely related to the standard Laplace kernel. We show theoretically that for normalized data on the hypersphere both kernels have the same eigenfunctions and their eigenvalues decay polynomially at the same rate, implying that their Reproducing Kernel Hilbert Spaces (RKHS) include the same sets of functions. This means that both kernels give rise to classes of functions with the same smoothness properties. The two kernels differ for data off the hypersphere, but experiments indicate that when data is properly normalized these differences are not significant. Finally, we provide experiments on real data comparing NTK and the Laplace kernel, along with a larger class of{\gamma}-exponential kernels. We show that these perform almost identically. Our results suggest that much insight about neural networks can be obtained from analysis of the well-known Laplace kernel, which has a simple closed-form.">Abstract</a>
-<a href="https://arxiv.org/pdf/2007.01580.pdf" target="_blank" class="btn btn-default abstract" ptitle="On the Similarity between the Laplace and Neural Tangent Kernels">Paper</a>
-
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-
-
-       <div class="row" id="templatemo_publications_LargeScaleBD">
-             <div class="col-md-1"></div>
-             <div class="col-md-5 col-sm-7 col-xs-24">
-                 <img src="images/miccaiw.png"  alt="">
-
-             </div>
-             <div class="col-md-1"></div>
-             <div class="col-md-16">
-                 <h2>End-To-End Convolutional Neural Network for 3D Reconstruction of Knee Bones From Bi-Planar X-Ray Images</h2>
-                 <p>
-                   <b> Yoni Kasten </b>*, Daniel Doktofsky*, Ilya Kovler* (*equal contribution)<br>
-                   <i> International Workshop on Machine Learning for Medical Image Reconstruction at MICCAI 2020  </i> <br>
-                 </p>
-                 <a class="btn btn-default abstract" ptitle="We present an end-to-end Convolutional Neural Network (CNN) approach for 3D reconstruction of knee bones directly from two bi-planar X-ray images. Clinically, capturing the 3D models of the bones is crucial for surgical planning, implant fitting, and postoperative evaluation. X-ray imaging significantly reduces the exposure of patients to ionizing radiation compared to Computer Tomography (CT) imaging, and is much more common and inexpensive compared to Magnetic Resonance Imaging (MRI) scanners. However, retrieving 3D models from such 2D scans is extremely challenging. In contrast to the common approach of statistically modeling the shape of each bone, our deep network learns the distribution of the bones’ shapes directly from the training images. We train our model with both supervised and unsupervised losses using Digitally Reconstructed Radiograph (DRR) images generated from CT scans. To apply our model to X-Ray data, we use style transfer to transform between X-Ray and DRR modalities. As a result, at test time, without further optimization, our solution directly outputs a 3D reconstruction from a pair of bi-planar X-ray images, while preserving geometric constraints. Our results indicate that our deep learning model is very efficient, generalizes well and produces high quality reconstructions."> Abstract</a>
-                 <a href="https://arxiv.org/pdf/2004.00871.pdf" class="btn btn-default" target="_blank">Paper </a>
-             </div>
-
-      </div><!-- end of row -->
-
-
-
-  <div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/icml2020.png" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Frequency Bias in Neural Networks for Input of Non-Uniform Density</h2>
-<p>Ronen Basri, Meirav Galun, Amnon Geifman,  David Jacobs, <b> Yoni Kasten </b> , Shira Kritchman (alphabetical order)<p>
-<tab1>  </tab1>
-<p><i>ICML 2020</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Frequency Bias in Neural Networks for Input of Non-Uniform Density"
-abstract="Recent works have partly attributed the generalization ability of over-parameterized neural networks to frequency bias -- networks trained with gradient descent on data drawn from a uniform distribution find a low frequency fit before high frequency ones. As realistic training sets are not drawn from a uniform distribution, we here use the Neural Tangent Kernel (NTK) model to explore the effect of variable density on training dynamics. Our results, which combine analytic and empirical observations, show that when learning a pure harmonic function of frequency ?, convergence at a point $\x \in \Sphere^{d-1}$ occurs in time $O(\kappa^d/p(\x))$ where $p(\x)$ denotes the local density at $\x$. Specifically, for data in $\Sphere^1$ we analytically derive the eigenfunctions of the kernel associated with the NTK for two-layer networks. We further prove convergence results for deep, fully connected networks with respect to the spectral decomposition of the NTK. Our empirical study highlights similarities and differences between deep and shallow networks in this model.">Abstract</a>
-<a href="https://arxiv.org/pdf/2003.04560.pdf" target="_blank" class="btn btn-default abstract" ptitle="Frequency Bias in Neural Networks for Input of Non-Uniform Density">Paper</a>
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-
-
-    <div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/cvpr2020.png" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Averaging Essential and Fundamental Matrices in Collinear Camera Settings</h2>
-<p>Amnon Geifman*, <b> Yoni Kasten</b>*, Meirav Galun  and Ronen Basri (*equal contribution)<p>
-<tab1>  </tab1>
-<p><i>CVPR 2020</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Averaging Essential and Fundamental Matrices in Collinear Camera Settings"
-abstract="Global methods to Structure from Motion have gained popularity in recent years. A significant drawback of global methods is their sensitivity to collinear camera settings. In this paper, we introduce an analysis and algorithms for averaging bifocal tensors (essential or fundamental matrices) when either subsets or all of the camera centers are collinear.
- We provide a complete spectral characterization of bifocal tensors in collinear scenarios and further propose two averaging algorithms. The first algorithm uses rank constrained minimization to recover camera matrices in fully collinear settings. The second algorithm enriches the set of possibly mixed collinear and non-collinear cameras with additional, ''virtual cameras'', which are placed in general position, enabling the application of existing averaging methods to the enriched set of bifocal tensors. Our algorithms are shown to achieve state of the art results on various benchmarks that include autonomous car datasets and unordered image collections  in both calibrated and unclibrated settings.">Abstract</a>
-<a href="https://arxiv.org/pdf/1912.00254.pdf" target="_blank" class="btn btn-default abstract" ptitle="Averaging Essential and Fundamental Matrices in Collinear Camera Settings">Paper</a>
-<a href="https://www.youtube.com/watch?v=P1stdNCttZY" class="btn btn-default" target="_blank">Video Lecture (Israel Computer Vision Day 2019) </a>
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/nips2019.PNG" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>The Convergence Rate of Neural Networks for</h2>
-<h2>Learned Functions of Different Frequencies</h2>
-<p>Ronen Basri, David Jacobs, <b> Yoni Kasten </b>  and Shira Kritchman (alphabetical order)<p>
-<tab1>  </tab1>
-<p><i>NeurIPS 2019</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="The Convergence Rate of Neural Networks for
-Learned Functions of Different Frequencies"
-abstract="We study the relationship between the speed at which a neural network learns a
-function and the frequency of the function. We build on recent results that show
-that the dynamics of overparameterized neural networks trained with gradient descent can be well approximated by a linear system. When normalized training
-data is uniformly distributed on a hypersphere, the eigenfunctions of this linear
-system are spherical harmonic functions. We derive the corresponding eigenvalues for each frequency after introducing a bias term in the model. This bias term
-had been omitted from the linear network model without significantly affecting
-previous theoretical results. However, we show theoretically and experimentally
-that a shallow neural network without bias cannot learn simple, low frequency
-functions with odd frequencies, in the limit of large amounts of data. Our results
-enable us to make specific predictions of the time it will take a network with bias
-to learn functions of varying frequency. These predictions match the behavior of
-real shallow and deep networks.
-">Abstract</a>
-<a href="https://arxiv.org/pdf/1906.00425.pdf" target="_blank" class="btn btn-default abstract" ptitle="The Convergence Rate of Neural Networks for
-Learned Functions of Different Frequencies">Paper</a>
-<a href="https://github.com/ykasten/Convergence-Rate-NN-Different-Frequencies" class="btn btn-default" target="_blank">Code</a>
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/iccv2019.PNG" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Algebraic Characterization of Essential Matrices </h2>
-<h2>and Their Averaging in Multiview Settings</h2>
-<p><b> Yoni Kasten</b>*, Amnon Geifman*, Meirav Galun and  Ronen Basri  (*equal contribution)<p>
-<tab1>  </tab1>
-<p><i>ICCV 2019</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Algebraic Characterization of Essential Matrices and Their Averaging
-in Multiview Settings"
-abstract="Essential matrix averaging, i.e., the task of recovering camera locations and orientations in calibrated, multiview settings, is a first step in global approaches to Euclidean structure from motion. A common approach to essential matrix averaging is to separately solve for camera orientations and subsequently for camera positions. This paper presents a novel approach that solves  simultaneously for both camera orientations and positions. We offer a complete characterization of the algebraic conditions that enable a unique Euclidean reconstruction of $n$ cameras from a collection of $(^n_2)$ essential matrices. We next use these conditions to formulate essential matrix averaging as a constrained optimization problem, allowing us to recover a consistent set of essential matrices given a (possibly partial) set of measured essential matrices computed independently for pairs of images. We finally use the recovered essential matrices to determine the global positions and orientations of the $n$ cameras. We test our method on common SfM datasets, demonstrating high accuracy while maintaining efficiency and robustness, compared to existing methods.
-">Abstract</a>
-<a href="https://arxiv.org/pdf/1904.02663.pdf" target="_blank" class="btn btn-default abstract" ptitle="Algebraic Characterization of Essential Matrices and Their Averaging
-in Multiview Settings">Paper</a>
-<a href="https://github.com/amnonge/Multi-view-Essential-Matrix" class="btn btn-default" target="_blank">Code</a>
-<a href="https://www.youtube.com/watch?v=P1stdNCttZY" class="btn btn-default" target="_blank">Video Lecture (Israel Computer Vision Day 2019) </a>
-<!--<a href="https://github.com/YuvalBahat/Confidence_From_Invariance" class="btn btn-default">Code</a>-->
-</div>
-        </div>
-
-
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/cvpr2019.PNG" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>GPSfM: Global Projective SFM Using Algebraic Constraints</h2>
-<h2>on Multi-View Fundamental Matrices</h2>
-<p><b> Yoni Kasten</b>*, Amnon Geifman*, Meirav Galun and  Ronen Basri  (*equal contribution)<p>
-<tab1>  </tab1>
-<p><i>CVPR 2019</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="GPSfM: Global Projective SFM Using Algebraic Constraints on Multi-View Fundamental Matrices"
-abstract="This paper addresses the problem of recovering projective camera matrices from collections of fundamental matrices in multiview settings. We make two main contributions. First, given ${n \choose 2}$ fundamental matrices computed for $n$ images, we provide a complete algebraic characterization in the form of conditions that are both necessary and sufficient to enabling the recovery of camera matrices. These conditions are based on arranging the fundamental matrices as blocks in a single matrix, called the $n$-view fundamental matrix, and characterizing this matrix in terms of the signs of its eigenvalues and rank structures. Secondly, we propose a concrete algorithm for projective structure-from-motion that utilizes this characterization. Given a complete or  partial collection of measured fundamental matrices,  our method seeks camera matrices that minimize a global algebraic error for the measured fundamental matrices. In contrast to existing methods, our optimization, without any initialization,  produces a consistent set of fundamental matrices that corresponds to a unique set of cameras (up to a choice of projective frame).  Our experiments indicate that our method achieves state of the art performance in both accuracy and running time.          
-">Abstract</a>
-<a href="https://arxiv.org/pdf/1812.00426.pdf" target="_blank" class="btn btn-default abstract" ptitle="GPSfM: Global Projective SFM Using Algebraic Constraints on Multi-View Fundamental Matrices">Paper</a>
-<a href="https://github.com/amnonge/GPSFM-code" class="btn btn-default" target="_blank">Code</a>
-<a href="https://www.youtube.com/watch?v=P1stdNCttZY" class="btn btn-default" target="_blank">Video Lecture (Israel Computer Vision Day 2019) </a>
-</div>
-        </div>
-
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/wacv2019.PNG" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Resultant Based Incremental Recovery of Camera Pose </h2>
-<h2>from Pairwise Matches</h2>
-<p><b> Yoni Kasten </b> , Meirav Galun and  Ronen Basri  <p>
-<tab1>  </tab1>
-<p><i>WACV 2019</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Resultant Based Incremental Recovery of Camera Pose from Pairwise Matches"
-abstract="Incremental (online) structure from motion pipelines seek to recover the camera matrix associated with an image I_n given n-1 images, I_1,...,I_n-1, whose camera matrices have already been recovered. In this paper, we introduce a novel solution to the six-point online algorithm to recover the exterior parameters associated with I_n. Our algorithm uses just six corresponding pairs of 2D points, extracted each from I_n and from any of the preceding n-1 images, allowing the recovery of the full six degrees of freedom of the n'th camera, and unlike common methods, does not require tracking feature points in three or more images. Our novel solution is based on constructing a Dixon resultant, yielding a solution method that is both efficient and accurate compared to existing solutions. We further use Bernstein's theorem to prove a tight bound on the number of complex solutions. Our experiments demonstrate the utility of our approach.        
-">Abstract</a>
-<a href="https://arxiv.org/pdf/1901.09364.pdf"  target="_blank" class="btn btn-default abstract" ptitle="Resultant Based Incremental Recovery of Camera Pose from Pairwise Matches">Paper</a>
-<a href="https://github.com/ykasten/resultantCamPose" class="btn btn-default" target="_blank">Code</a>
-<a href="https://www.youtube.com/watch?v=B_NzjQFZUN4" class="btn btn-default" target="_blank">Video Lecture (Israel Computer Vision Day 2018)</a>
-</div>
-        </div>
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/icip2018.png" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Two View Constraints on the Epipoles from Few Correspondences </h2>
-<p><b> Yoni Kasten </b> , Michael Werman  <p>
-<tab1>  </tab1>
-<p><i>ICIP 2018</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Two View Constraints on the Epipoles from Few Correspondences"
-abstract="In general it requires at least 7 point correspondences to compute the fundamental matrix between views. We use the cross ratio invariance between corresponding epipolar lines, stemming from epipolar line homography, to derive a simple formulation for the relationship between epipoles and corresponding points. We show how it can be used to reduce the number of required points for the epipolar geometry when some information about the epipoles is available and demonstrate this with a buddy search app.  
-">Abstract</a>
-<a href="https://arxiv.org/pdf/1810.09496.pdf" target="_blank" class="btn btn-default abstract" ptitle="Two View Constraints on the Epipoles from Few Correspondences">Paper</a>
-<a href="buddy_search.html" class="btn btn-default" target="_blank">Buddy Search Web App (developed with Tomer Hacohen)</a>
-</div>
-        </div>
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/eccv2016.gif" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Fundamental Matrices from Moving Objects Using Line Motion Barcodes </h2>
-<p><b> Yoni Kasten </b> , Gil Ben-Artzi, Shmuel Peleg and Michael Werman  <p>
-<tab1>  </tab1>
-<p><i>ECCV 2016</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Fundamental Matrices from Moving Objects Using Line Motion Barcodes"
-abstract="Computing the epipolar geometry between cameras with very different viewpoints is often very difficult. The appearance of objects can vary greatly, and it is difficult to find corresponding feature points. Prior methods searched for corresponding epipolar lines using points on the convex hull of the silhouette of a single moving object. These methods fail when the scene includes multiple moving objects. This paper extends previous work to scenes having multiple moving objects by using the ?otion Barcodes? a temporal signature of lines. Corresponding epipolar lines have similar motion barcodes, and candidate pairs of corresponding epipoar lines are found by the similarity of their motion barcodes. As in previous methods we assume that cameras are relatively stationary and that moving objects have already been extracted using background subtraction.  
-">Abstract</a>
-<a href="https://arxiv.org/pdf/1607.07660.pdf" target="_blank" class="btn btn-default abstract" ptitle="Fundamental Matrices from Moving Objects Using Line Motion Barcodes">Paper</a>
-</div>
-        </div>
-
-<div class="row" id="templatemo_publications_LargeScaleBD">
-<div class="col-md-1"></div>
-<div class="col-md-5 col-sm-7 col-xs-24">
-<img src="images/cvpr2016.png" alt="image 1">
-</div>
-<div class="col-md-1"></div>
-<div class="col-md-16">
-<h2>Camera Calibration From Dynamic Silhouettes Using Motion Barcodes </h2>
-<p>Gil Ben-Artzi,<b> Yoni Kasten </b> , Shmuel Peleg and Michael Werman  <p>
-<tab1>  </tab1>
-<p><i>CVPR 2016</i></p>
-</p>
-<!--<a class="btn btn-default abstract" ptitle="Abstract will be available soon...">Abstract</a>-->
-<a class="btn btn-default abstract" ptitle="Camera Calibration From Dynamic Silhouettes Using Motion Barcodes"
-abstract="Computing the epipolar geometry between cameras with very different viewpoints is often problematic as matching points are hard to find. In these cases, it has been proposed to use information from dynamic objects in the scene for suggesting point and line correspondences. We propose a speed up of about two orders of magnitude, as well as an increase in robustness and accuracy, to methods computing epipolar geometry from dynamic silhouettes based on a new temporal signature, motion barcode for lines. This is a binary temporal sequence for lines, indicating for each frame the existence of at least one foreground pixel on that line. The motion barcodes of two corresponding epipolar lines are very similar so the search for corresponding epipolar lines can be limited to lines having similar barcodes leading to increased speed, accuracy, and robustness in computing the epipolar geometry.  
-">Abstract</a>
-<a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Ben-Artzi_Camera_Calibration_From_CVPR_2016_paper.pdf" target="_blank" class="btn btn-default abstract" ptitle="Camera Calibration From Dynamic Silhouettes Using Motion Barcodes">Paper</a>
-</div>
-        </div>
-
-</div></section><!-- end of templatemo_publications -->
-
-<br>
-<br>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -820,9 +752,5 @@ abstract="Computing the epipolar geometry between cameras with very different vi
   ga('send', 'pageview');
 
 </script>
-<div id="lightbox" style="display:none;"><a href="#" class="lightbox-close lightbox-button"></a><div class="lightbox-nav" style="display: none;"><a href="#" class="lightbox-previous lightbox-button"></a><a href="#" class="lightbox-next lightbox-button"></a></div><div href="#" class="lightbox-caption"><p></p></div></div></body><!-- Mirrored from www.wisdom.weizmann.ac.il/~shaharko/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Apr 2016 11:56:56 GMT --></html><script id="f5_cspm">(function(){var f5_cspm={f5_p:'IOHAGAJCCJLFEHNFGLFAFJIDEHNLBIMHHIENOOIFILJIGLNIECMNPHFJBEPONDKELFKPFDBGPNABIAMBMBFBJOFECDNAOPGEAACPPLEJHOHNIKJKAABBIILKKENCEOAF',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0600570113aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
-return;}}
-catch(err){return;}
-setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
-{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
-f5_cspm.go();}());</script>
+</body>
+</html>
