@@ -80,14 +80,14 @@ h1 { font: 400 clamp(56px, 6.5vw, 84px)/1.08 var(--serif); letter-spacing: -.055
 .publication { display: grid; grid-template-columns: 250px minmax(0, 1fr); align-items: start; gap: 36px; padding-block: 29px; border-bottom: 1px solid var(--line); }
 .publication:last-child { border-bottom: 0; padding-bottom: 4px; }
 .publication-media { display: grid; gap: 5px; padding: 10px; aspect-ratio: 1.6; border: 1px solid #e7e7e0; background: #fff; border-radius: 8px; overflow: hidden; }
-.publication-media img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.publication-media img, .publication-media video { display: block; max-width: 100%; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
 .publication-media.multiple-images { grid-template-rows: 1fr 1fr; }
 /* Crop the original 720 × 429 animation without changing its frames or timing.
    Scene: (0, 105)–(540, 429). Source video: (570, 4)–(714, 85). */
 .publication-media.fast4d-preview { display: block; position: relative; padding: 0; aspect-ratio: 540 / 324; background: #171717; }
 .fast4d-preview .fast4d-scene { position: absolute; max-width: none; width: 133.333333%; height: 132.407407%; left: 0; top: -32.407407%; object-fit: fill; }
 .fast4d-input { position: absolute; top: 4%; right: 3%; width: 34%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 3px; box-shadow: 0 0 0 1px rgb(255 255 255 / 18%); }
-.fast4d-input img { position: absolute; max-width: none; width: 500%; height: 529.62963%; left: -395.833333%; top: -4.938272%; object-fit: fill; }
+.fast4d-input img, .fast4d-input video { position: absolute; max-width: none; width: 500%; height: 529.62963%; left: -395.833333%; top: -4.938272%; object-fit: fill; }
 .publication-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin: 7px 0 0; color: var(--green); font-size: 11px; font-weight: 600; line-height: 1.7; }
 .award { color: #7b5425; font-size: 10px; font-weight: 500; }
 .publication-title { font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; }
